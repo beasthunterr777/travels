@@ -14,6 +14,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Mail, Send, Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import Image from 'next/image';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -54,8 +55,18 @@ export default function ContactPage() {
 
   return (
     <div className="space-y-8">
-      <Card className="shadow-lg max-w-2xl mx-auto">
-        <CardHeader className="text-center">
+      <Card className="shadow-lg max-w-2xl mx-auto overflow-hidden">
+        <div className="relative h-56 w-full">
+            <Image
+                src="https://media.licdn.com/dms/image/v2/D4D12AQG8j2F5gKpRCQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1703152946543?e=2147483647&v=beta&t=rbyWJjdu39IB9OMDnKjanpD05z2Tw9i_Er2ST5GgWJQ"
+                alt="Contact us background"
+                data-ai-hint="contact office"
+                layout="fill"
+                objectFit="cover"
+                quality={85}
+            />
+        </div>
+        <CardHeader className="text-center pt-6">
           <Mail className="mx-auto h-12 w-12 text-primary mb-2" />
           <CardTitle className="text-3xl font-bold text-primary">Contact Us</CardTitle>
           <CardDescription className="text-muted-foreground">
