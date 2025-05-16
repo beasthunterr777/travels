@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -6,10 +7,9 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
+import { Label } from '@/components/ui/label'; // Label might not be explicitly used if FormLabel is preferred
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { generateItineraryFromDestinations, type GenerateItineraryInput, type GenerateItineraryOutput } from '@/ai/flows/travel-itinerary-generator';
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Loader2, Wand2 } from 'lucide-react';
@@ -54,7 +54,7 @@ export default function TripPlannerPage() {
 
   return (
     <div className="space-y-8">
-      <Card className="shadow-lg">
+      <Card className="shadow-lg border border-primary/30">
         <CardHeader className="text-center">
           <Wand2 className="mx-auto h-12 w-12 text-primary mb-2" />
           <CardTitle className="text-3xl font-bold text-primary">AI Trip Planner</CardTitle>
@@ -70,10 +70,13 @@ export default function TripPlannerPage() {
                 name="destinations"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Destinations (comma-separated)</FormLabel>
+                    <FormLabel>Destinations</FormLabel>
                     <FormControl>
                       <Input placeholder="e.g., Mysore, Coorg, Hampi" {...field} />
                     </FormControl>
+                    <FormDescription>
+                      Enter city or place names. Separate multiple destinations with a comma.
+                    </FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -87,6 +90,9 @@ export default function TripPlannerPage() {
                     <FormControl>
                       <Input placeholder="e.g., 5 days, 1 week" {...field} />
                     </FormControl>
+                    <FormDescription>
+                      Specify how long your trip will be (e.g., 3 days, 1 week, 10 days).
+                    </FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -96,10 +102,13 @@ export default function TripPlannerPage() {
                 name="interests"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Interests (comma-separated)</FormLabel>
+                    <FormLabel>Your Interests</FormLabel>
                     <FormControl>
                       <Input placeholder="e.g., historical sites, nature, adventure, food" {...field} />
                     </FormControl>
+                    <FormDescription>
+                      List your travel interests like 'temples, beaches, hiking'. Comma-separated.
+                    </FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -127,7 +136,7 @@ export default function TripPlannerPage() {
       )}
 
       {itinerary && (
-        <Card className="shadow-lg">
+        <Card className="shadow-lg border border-primary/30">
           <CardHeader>
             <CardTitle className="text-2xl text-primary">Your Custom Itinerary</CardTitle>
           </CardHeader>
