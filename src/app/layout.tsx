@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Karnataka Explorer - Your Guide to Travel Across Karnataka',
-  description: 'Explore tourist destinations, plan itineraries, and discover the rich culture of Karnataka.',
+  title: 'KARNATAKA TOURIST RECOMMENDER - Your AI Guide to Karnataka',
+  description: 'Get personalized tourist recommendations, plan itineraries, and discover the rich culture of Karnataka with an AI assistant.',
 };
 
 export default function RootLayout({

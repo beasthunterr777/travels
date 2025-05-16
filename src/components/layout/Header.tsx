@@ -19,7 +19,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2 text-primary hover:text-accent transition-colors">
           <Palmtree className="h-8 w-8" />
-          <h1 className="text-2xl font-bold">Karnataka Explorer</h1>
+          <h1 className="text-2xl font-bold">KARNATAKA TOURIST RECOMMENDER</h1>
         </Link>
         
         {/* Desktop Navigation */}
@@ -40,7 +40,7 @@ export default function Header() {
               <div className="flex flex-col items-start p-6 space-y-4">
                 <Link href="/" className="flex items-center gap-2 text-primary hover:text-accent transition-colors mb-4">
                   <Palmtree className="h-7 w-7" />
-                  <h1 className="text-xl font-bold">Karnataka Explorer</h1>
+                  <h1 className="text-xl font-bold">KARNATAKA TOURIST RECOMMENDER</h1>
                 </Link>
                 {navLinks.map((link) => (
                   <Link
