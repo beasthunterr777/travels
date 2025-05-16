@@ -34,7 +34,7 @@ const RecommendedDestinationSchema = z.object({
   name: z.string().describe('Name of the recommended destination.'),
   description: z.string().describe('Brief description of why this destination is recommended.'),
   googleMapsUrl: z.string().url().optional().describe('A Google Maps search URL for this destination (e.g., "https://www.google.com/maps/search/?api=1&query=Coorg%2C+Karnataka"). Ensure the query is URL encoded.'),
-  weather: GetWeatherOutputSchema.optional().describe('Current weather for this destination. Use the getWeather tool.'),
+  weather: GetWeatherOutputSchema.nullable().optional().describe('Current weather for this destination. Use the getWeather tool.'),
 });
 
 const SuggestedActivitySchema = z.object({
@@ -103,7 +103,7 @@ Your response must be a JSON object with the following fields:
   - "name": The name of the place.
   - "description": Why it's recommended.
   - "googleMapsUrl": A Google Maps search URL (e.g., "https://www.google.com/maps/search/?api=1&query=URL_ENCODED_LOCATION_NAME").
-  - "weather": Use the 'getWeather' tool to provide current weather for this destination.
+  - "weather": Use the 'getWeather' tool to provide current weather for this destination. If weather is not applicable or not fetched, this field can be omitted or set to null.
 - "suggestedActivities": An array of activity objects. For each activity:
   - "name": Name of the activity.
   - "description": Details and where it can be done.

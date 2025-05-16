@@ -26,7 +26,7 @@ const ActivitySchema = z.object({
   name: z.string().describe('Name of the activity or place to visit.'),
   description: z.string().optional().describe('A brief description of the activity or place.'),
   googleMapsUrl: z.string().url().optional().describe('A Google Maps search URL for this specific activity or location. Construct this as https://www.google.com/maps/search/?api=1&query=URL_ENCODED_LOCATION_NAME.'),
-  weather: GetWeatherOutputSchema.optional().describe('Weather forecast for this location, if applicable. Use the getWeather tool for primary locations.'),
+  weather: GetWeatherOutputSchema.nullable().optional().describe('Weather forecast for this location, if applicable. Use the getWeather tool for primary locations.'),
 });
 
 const DailyPlanSchema = z.object({
@@ -68,7 +68,7 @@ The output should be a JSON object adhering to the GenerateItineraryOutput schem
     - "name": Name of the specific activity or place.
     - "description": A short description of the activity/place.
     - "googleMapsUrl": Generate a Google Maps search URL for this specific activity or location (e.g., "https://www.google.com/maps/search/?api=1&query=Mysore+Palace%2C+Karnataka"). Ensure the query is URL encoded.
-    - "weather": For the primary location of each day or significant outdoor activity, use the 'getWeather' tool to fetch and include the current weather. Only call getWeather for distinct, major locations to avoid redundancy.
+    - "weather": For the primary location of each day or significant outdoor activity, use the 'getWeather' tool to fetch and include the current weather. If weather is not applicable or not fetched, this field can be omitted or set to null. Only call getWeather for distinct, major locations to avoid redundancy.
 
 Consider travel times between locations, opening hours, and logical sequencing of activities. Provide practical and engaging suggestions.
 For example, if a day is focused on Mysore, use getWeather for Mysore. If an activity is a specific trek, get weather for the trek's starting point if it's distinct.
