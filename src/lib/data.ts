@@ -1,3 +1,4 @@
+
 import type { Destination, BookingLink, Itinerary } from './types';
 
 export const destinations: Destination[] = [
@@ -153,3 +154,5 @@ export const sampleItineraries: Itinerary[] = [
     ]
   }
 ];
+
+    
