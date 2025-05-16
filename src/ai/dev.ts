@@ -1,1 +1,6 @@
-// Flows will be imported for their side effects in this file.
+import { config } from 'dotenv';
+config();
+
+import '@/ai/flows/ai-travel-assistant.ts';
+import '@/ai/flows/travel-itinerary-generator.ts';
+import '@/ai/flows/travel-recommendation.ts';
