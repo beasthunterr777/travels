@@ -58,9 +58,9 @@ export default function ContactPage() {
       <Card className="shadow-lg max-w-2xl mx-auto overflow-hidden">
         <div className="relative h-56 w-full">
             <Image
-                src="https://media.licdn.com/dms/image/v2/D4D12AQG8j2F5gKpRCQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1703152946543?e=2147483647&v=beta&t=rbyWJjdu39IB9OMDnKjanpD05z2Tw9i_Er2ST5GgWJQ"
-                alt="Contact us background"
-                data-ai-hint="contact office"
+                src="https://karnatakatourism.org/wp-content/uploads/2021/08/contactus.jpg"
+                alt="Contact us Karnataka Tourism"
+                data-ai-hint="contact banner"
                 layout="fill"
                 objectFit="cover"
                 quality={85}
