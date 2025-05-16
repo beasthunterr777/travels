@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Palmtree, Menu } from 'lucide-react';
 import MainNavigation from './MainNavigation';

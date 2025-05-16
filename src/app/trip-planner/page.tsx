@@ -57,9 +57,9 @@ export default function TripPlannerPage() {
       <Card className="shadow-lg border border-primary/30">
         <CardHeader className="text-center">
           <Wand2 className="mx-auto h-12 w-12 text-primary mb-2" />
-          <CardTitle className="text-3xl font-bold text-primary">AI Trip Planner</CardTitle>
+          <CardTitle className="text-3xl font-bold text-primary">Trip Planner</CardTitle>
           <CardDescription className="text-muted-foreground">
-            Let our AI craft the perfect Karnataka itinerary for you. Just enter your preferences below.
+            Let us craft the perfect Karnataka itinerary for you. Just enter your preferences below.
           </CardDescription>
         </CardHeader>
         <CardContent>
