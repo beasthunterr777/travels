@@ -88,7 +88,7 @@ export default function TripPlannerPage() {
                   <FormItem>
                     <FormLabel>Trip Duration</FormLabel>
                     <FormControl>
-                      <Input placeholder="e.g., 5 days, 1 week" {...field} />
+                      <Input placeholder="e.g., 3 days, 1 week, 10 days" {...field} />
                     </FormControl>
                     <FormDescription>
                       Specify how long your trip will be (e.g., 3 days, 1 week, 10 days).
