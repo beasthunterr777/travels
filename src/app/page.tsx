@@ -19,6 +19,7 @@ export default function HomePage() {
           layout="fill"
           objectFit="cover"
           priority
+          quality={85}
         />
         <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center p-4">
           <h1 className="text-5xl font-extrabold text-white drop-shadow-lg mb-4">
@@ -49,6 +50,7 @@ export default function HomePage() {
                   width={600}
                   height={400}
                   className="w-full h-48 object-cover"
+                  quality={85}
                 />
               </CardHeader>
               <CardContent className="p-6">

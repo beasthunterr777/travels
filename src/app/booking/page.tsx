@@ -45,6 +45,7 @@ export default function BookingPage() {
                     width={400}
                     height={200}
                     className="w-full h-48 object-cover"
+                    quality={85}
                   />
                 </CardHeader>
               )}
@@ -85,6 +86,7 @@ export default function BookingPage() {
                     width={400}
                     height={200}
                     className="w-full h-48 object-cover"
+                    quality={85}
                   />
                 </CardHeader>
               )}

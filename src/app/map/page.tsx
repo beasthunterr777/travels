@@ -32,6 +32,7 @@ export default function InteractiveMapPage() {
               data-ai-hint="karnataka map"
               layout="fill"
               objectFit="contain" // or 'cover' depending on the image
+              quality={85}
             />
             {/* Placeholder for map pins - In a real implementation, these would be interactive elements on the map */}
              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-4 bg-black/50 text-white rounded-md">

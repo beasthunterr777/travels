@@ -27,6 +27,7 @@ export default function DestinationsPage() {
                   width={600}
                   height={400}
                   className="w-full h-56 object-cover"
+                  quality={85}
                 />
                 <div className="absolute bottom-0 left-0 bg-black/50 p-2">
                   {dest.category.map(cat => (
