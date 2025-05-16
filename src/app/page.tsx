@@ -13,7 +13,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
         <Image
-          src="https://placehold.co/1200x500.png"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ37QNdmbd6YFPn6ADD55RlVK4qHcewgrCC3A&s"
           alt="Beautiful landscape of Karnataka"
           data-ai-hint="karnataka landscape"
           layout="fill"
