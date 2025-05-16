@@ -27,6 +27,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.sushanttravels.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'blogger.googleusercontent.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

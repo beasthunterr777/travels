@@ -27,7 +27,7 @@ export default function InteractiveMapPage() {
           </p>
           <div className="relative w-full max-w-4xl mx-auto aspect-[16/10] rounded-lg overflow-hidden border-4 border-accent shadow-inner">
             <Image
-              src="https://placehold.co/1200x750.png" // Replace with an actual map image of Karnataka
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy6_z5IwR71UL8nV6H435bjTyr0CELJX-E_GDTTPYAEub_IB6B3ltpZ00VSJSnvy5bRF6MbSX-RjwnD4m6YBAwdG3dtnizrfVUgJyXgqIcVP08wszMdPfWRmQvWD0OX8qbGT0vxkeuLK5D/s1600/karnataka+ecotourism+web.jpg" 
               alt="Map of Karnataka"
               data-ai-hint="karnataka map"
               layout="fill"
