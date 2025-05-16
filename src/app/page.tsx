@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { destinations } from '@/lib/data';
-import { ArrowRight, MapIcon, Wand2, BotMessageSquare } from 'lucide-react';
+import { ArrowRight, Wand2, BotMessageSquare } from 'lucide-react';
 
 export default function HomePage() {
   const featuredDestinations = destinations.slice(0, 3);
@@ -29,7 +29,7 @@ export default function HomePage() {
           <p className="text-xl text-gray-200 drop-shadow-md mb-8 max-w-2xl">
             Discover breathtaking landscapes, ancient heritage, vibrant culture, and unforgettable experiences.
           </p>
-          <Button asChild size="lg" className="bg-primary hover:bg-accent text-primary-foreground hover:text-accent-foreground">
+          <Button asChild size="lg" className="bg-primary hover:bg-accent text-primary-foreground hover:text-accent-foreground" suppressHydrationWarning>
             <Link href="/trip-planner">
               Plan Your Adventure <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
@@ -59,7 +59,7 @@ export default function HomePage() {
                 <CardDescription className="text-muted-foreground line-clamp-3">{dest.shortDescription}</CardDescription>
               </CardContent>
               <CardFooter>
-                <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
+                <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10" suppressHydrationWarning>
                   <Link href={`/destinations/${dest.id}`}>
                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -69,7 +69,7 @@ export default function HomePage() {
           ))}
         </div>
         <div className="text-center mt-8">
-          <Button asChild variant="link" className="text-lg text-primary hover:text-accent">
+          <Button asChild variant="link" className="text-lg text-primary hover:text-accent" suppressHydrationWarning>
             <Link href="/destinations">
               View All Destinations <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
@@ -80,12 +80,7 @@ export default function HomePage() {
       {/* Quick Links Section */}
       <section className="bg-card p-8 rounded-lg shadow-lg">
         <h2 className="text-3xl font-bold text-center text-primary mb-8">Your Journey Starts Here</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Link href="/map" className="block p-6 bg-background rounded-lg shadow hover:shadow-xl transition-shadow text-center group">
-            <MapIcon className="h-12 w-12 mx-auto text-primary mb-3 group-hover:text-accent transition-colors" />
-            <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Interactive Map</h3>
-            <p className="text-muted-foreground text-sm">Visualize your trip and explore regions.</p>
-          </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> {/* Adjusted to 2 columns as Map is removed */}
           <Link href="/trip-planner" className="block p-6 bg-background rounded-lg shadow hover:shadow-xl transition-shadow text-center group">
             <Wand2 className="h-12 w-12 mx-auto text-primary mb-3 group-hover:text-accent transition-colors" />
             <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Trip Planner</h3>

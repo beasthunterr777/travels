@@ -8,7 +8,6 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 export default function Header() {
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/map', label: 'Interactive Map' },
     { href: '/destinations', label: 'Destinations' },
     { href: '/trip-planner', label: 'Trip Planner' },
     { href: '/ai-assistant', label: 'AI Assistant' },
@@ -32,7 +31,7 @@ export default function Header() {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon">
+              <Button variant="outline" size="icon" suppressHydrationWarning>
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Open menu</span>
               </Button>
