@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -12,7 +13,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { getPersonalizedTravelRecommendations, type TravelPreferencesInput, type TravelRecommendationsOutput } from '@/ai/flows/ai-travel-assistant';
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Loader2, BotMessageSquare } from 'lucide-react';
+import { Loader2, BotMessageSquare, MapPin, LinkIcon, ThermometerSun, ListChecks, CalendarRange, HandCoins, PlaneTakeoff } from 'lucide-react';
+import Link from 'next/link';
+import { Badge } from '@/components/ui/badge';
+import { Separator } from '@/components/ui/separator';
 
 const formSchema = z.object({
   interests: z.string().min(3, 'Please describe your interests.'),
@@ -49,7 +53,7 @@ export default function AiAssistantPage() {
       setRecommendations(result);
     } catch (e) {
       console.error(e);
-      setError('Failed to get recommendations. Please try again.');
+      setError('Failed to get recommendations. The AI might be having trouble with the request. Please try again.');
     } finally {
       setIsLoading(false);
     }
@@ -175,28 +179,92 @@ export default function AiAssistantPage() {
           <CardHeader>
             <CardTitle className="text-2xl text-primary">Your Personalized Recommendations</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
-            <div>
-              <h3 className="font-semibold text-lg text-foreground">Recommended Destinations:</h3>
-              <p className="text-muted-foreground whitespace-pre-wrap">{recommendations.destinations}</p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg text-foreground">Suggested Activities:</h3>
-              <p className="text-muted-foreground whitespace-pre-wrap">{recommendations.activities}</p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg text-foreground">Potential Itineraries:</h3>
-              <pre className="text-muted-foreground whitespace-pre-wrap bg-muted p-3 rounded-md font-mono text-sm">{recommendations.itineraries}</pre>
-            </div>
+          <CardContent className="space-y-6">
+            {recommendations.recommendedDestinations && recommendations.recommendedDestinations.length > 0 && (
+              <div>
+                <h3 className="font-semibold text-xl text-accent mb-3 flex items-center"><MapPin className="mr-2 h-5 w-5" /> Recommended Destinations</h3>
+                <div className="space-y-4">
+                  {recommendations.recommendedDestinations.map((dest, index) => (
+                    <Card key={index} className="p-4 bg-card/60 border">
+                      <CardTitle className="text-lg text-foreground mb-1">{dest.name}</CardTitle>
+                      <CardDescription className="text-sm text-muted-foreground mb-2">{dest.description}</CardDescription>
+                      <div className="flex flex-wrap gap-3 items-center mt-2">
+                        {dest.googleMapsUrl && (
+                          <Button variant="outline" size="sm" asChild className="border-primary text-primary hover:bg-primary/10">
+                            <Link href={dest.googleMapsUrl} target="_blank" rel="noopener noreferrer">
+                              <LinkIcon className="mr-2 h-4 w-4" /> View on Map
+                            </Link>
+                          </Button>
+                        )}
+                        {dest.weather && (
+                          <Badge variant="secondary" className="flex items-center gap-1.5 py-1 px-2.5">
+                            <ThermometerSun className="h-4 w-4 text-secondary-foreground/80" />
+                            <span>{dest.weather.condition}, {dest.weather.temperature}</span>
+                             {dest.weather.humidity && <span className="text-xs opacity-80">(Humidity: {dest.weather.humidity})</span>}
+                          </Badge>
+                        )}
+                      </div>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+            )}
+            
+            <Separator />
+
+            {recommendations.suggestedActivities && recommendations.suggestedActivities.length > 0 && (
+              <div>
+                <h3 className="font-semibold text-xl text-accent mb-3 flex items-center"><ListChecks className="mr-2 h-5 w-5" /> Suggested Activities</h3>
+                <ul className="list-disc list-inside space-y-2 pl-2">
+                  {recommendations.suggestedActivities.map((activity, index) => (
+                    <li key={index} className="text-muted-foreground">
+                      <strong className="text-foreground">{activity.name}:</strong> {activity.description}
+                      {activity.relatedDestination && <span className="text-xs text-primary ml-1"> (Near {activity.relatedDestination})</span>}
+                      {activity.googleMapsUrl && (
+                        <Link href={activity.googleMapsUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm ml-2">
+                          (Map <LinkIcon className="inline h-3 w-3" />)
+                        </Link>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <Separator />
+            
+            {recommendations.suggestedItineraries && recommendations.suggestedItineraries.length > 0 && (
+              <div>
+                <h3 className="font-semibold text-xl text-accent mb-3 flex items-center"><CalendarRange className="mr-2 h-5 w-5" /> Suggested Itineraries</h3>
+                <div className="space-y-3">
+                {recommendations.suggestedItineraries.map((itinerary, index) => (
+                  <Card key={index} className="p-3 bg-card/60 border">
+                    <p className="font-semibold text-foreground">{itinerary.title}</p>
+                    <p className="text-sm text-muted-foreground">{itinerary.summary}</p>
+                    {itinerary.days && itinerary.days.length > 0 && (
+                      <ul className="mt-1 list-disc list-inside text-xs text-muted-foreground space-y-0.5">
+                        {itinerary.days.map((day, dayIdx) => (
+                          <li key={dayIdx}><strong>Day {day.day}:</strong> {day.description}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </Card>
+                ))}
+                </div>
+              </div>
+            )}
+
             {recommendations.estimatedCost && (
               <div>
-                <h3 className="font-semibold text-lg text-foreground">Estimated Cost:</h3>
+                <Separator className="my-4"/>
+                <h3 className="font-semibold text-lg text-accent flex items-center"><HandCoins className="mr-2 h-5 w-5" /> Estimated Cost:</h3>
                 <p className="text-muted-foreground">{recommendations.estimatedCost}</p>
               </div>
             )}
             {recommendations.additionalNotes && (
               <div>
-                <h3 className="font-semibold text-lg text-foreground">Additional Notes:</h3>
+                <Separator className="my-4"/>
+                <h3 className="font-semibold text-lg text-accent flex items-center"><PlaneTakeoff className="mr-2 h-5 w-5" /> Additional Notes:</h3>
                 <p className="text-muted-foreground whitespace-pre-wrap">{recommendations.additionalNotes}</p>
               </div>
             )}
