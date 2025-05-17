@@ -34,6 +34,7 @@ const DailyPlanSchema = z.object({
   title: z.string().describe('A concise title for the day\'s plan (e.g., "Arrival in Mysore & Palace Visit").'),
   summary: z.string().optional().describe('A brief summary of the day\'s activities.'),
   activities: z.array(ActivitySchema).describe('A list of activities and places to visit for the day.'),
+  transportationNotes: z.string().optional().describe("Notes on transportation for this day's plan, e.g., 'Hire a taxi for local sightseeing', 'Take an overnight bus to Hampi'.")
 });
 
 const GenerateItineraryOutputSchema = z.object({
@@ -69,6 +70,7 @@ The output should be a JSON object adhering to the GenerateItineraryOutput schem
     - "description": A short description of the activity/place.
     - "googleMapsUrl": Generate a Google Maps search URL for this specific activity or location (e.g., "https://www.google.com/maps/search/?api=1&query=Mysore+Palace%2C+Karnataka"). Ensure the query is URL encoded.
     - "weather": For the primary location of each day or significant outdoor activity, use the 'getWeather' tool to fetch and include the current weather. If weather is not applicable or not fetched, this field can be omitted or set to null. Only call getWeather for distinct, major locations to avoid redundancy.
+  - "transportationNotes": Suggestions on how to travel to the day's main location or between major activities for the day. For example: 'Recommend hiring a local auto-rickshaw for sightseeing within Hampi and a KSRTC bus for travel between Hampi and Bangalore.'
 
 Consider travel times between locations, opening hours, and logical sequencing of activities. Provide practical and engaging suggestions.
 For example, if a day is focused on Mysore, use getWeather for Mysore. If an activity is a specific trek, get weather for the trek's starting point if it's distinct.

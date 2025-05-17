@@ -11,7 +11,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { generateItineraryFromDestinations, type GenerateItineraryInput, type GenerateItineraryOutput } from '@/ai/flows/travel-itinerary-generator';
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Loader2, Wand2, MapPin, LinkIcon, ThermometerSun, CalendarDays, MountainSnow, Info } from 'lucide-react';
+import { Loader2, Wand2, MapPin, LinkIcon, ThermometerSun, CalendarDays, MountainSnow, Info, CarFront } from 'lucide-react';
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
@@ -74,7 +74,7 @@ export default function TripPlannerPage() {
                   <FormItem>
                     <FormLabel>Destinations in Karnataka</FormLabel>
                     <FormControl>
-                      <Input placeholder="e.g., Mysore, Coorg, Hampi" {...field} />
+                      <Input placeholder="e.g., Mysore, Coorg, Hampi" {...field} suppressHydrationWarning />
                     </FormControl>
                     <FormDescription>
                       Enter city or place names. Separate multiple destinations with a comma.
@@ -90,10 +90,10 @@ export default function TripPlannerPage() {
                   <FormItem>
                     <FormLabel>Trip Duration</FormLabel>
                     <FormControl>
-                      <Input placeholder="e.g., 3 days, 1 week, 10 days" {...field} />
+                      <Input placeholder="e.g., 3 days, 1 week, 10 days" {...field} suppressHydrationWarning />
                     </FormControl>
                     <FormDescription>
-                      Specify how long your trip will be (e.g., "3 days", "1 week", "10 days").
+                       Specify how long your trip will be (e.g., "3 days", "1 week", "10 days").
                     </FormDescription>
                     <FormMessage />
                   </FormItem>
@@ -106,7 +106,7 @@ export default function TripPlannerPage() {
                   <FormItem>
                     <FormLabel>Your Interests</FormLabel>
                     <FormControl>
-                      <Input placeholder="e.g., historical sites, nature, adventure, food" {...field} />
+                      <Input placeholder="e.g., historical sites, nature, adventure, food" {...field} suppressHydrationWarning />
                     </FormControl>
                     <FormDescription>
                       List your travel interests like 'temples, beaches, hiking'. Comma-separated.
@@ -115,7 +115,7 @@ export default function TripPlannerPage() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full" disabled={isLoading}>
+              <Button type="submit" className="w-full" disabled={isLoading} suppressHydrationWarning>
                 {isLoading ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -176,19 +176,27 @@ export default function TripPlannerPage() {
                       </div>
                     </div>
                   ))}
+                  {plan.transportationNotes && (
+                    <div className="mt-4 p-3 bg-background/70 rounded-md border border-border/70">
+                      <h5 className="font-semibold text-foreground flex items-center mb-1">
+                        <CarFront className="mr-2 h-5 w-5 text-primary/80" /> Transportation Notes:
+                      </h5>
+                      <p className="text-sm text-muted-foreground">{plan.transportationNotes}</p>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}
           </CardContent>
         </Card>
       )}
-       {itinerary && !itinerary.dailyPlans && ( // Fallback for old string format if AI fails
+       {itinerary && !itinerary.dailyPlans && ( 
         <Card className="shadow-lg border border-primary/30">
           <CardHeader>
             <CardTitle className="text-2xl text-primary">Your Custom Itinerary</CardTitle>
           </CardHeader>
           <CardContent>
-             {/* @ts-ignore */}
+            {/* @ts-ignore */}
             <pre className="whitespace-pre-wrap bg-muted p-4 rounded-md text-sm text-foreground font-mono">{itinerary.itinerary || "No itinerary details available."}</pre>
           </CardContent>
         </Card>

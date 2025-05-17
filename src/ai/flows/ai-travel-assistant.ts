@@ -70,6 +70,7 @@ const TravelRecommendationsOutputSchema = z.object({
     .string()
     .optional()
     .describe('Estimated cost of the trip based on the budget and duration.'),
+  transportationAdvice: z.string().optional().describe("General advice on transportation in Karnataka relevant to the trip (e.g., 'KSRTC buses are good for inter-city travel', 'Consider local autos for short distances.')."),
   additionalNotes: z
     .string()
     .optional()
@@ -114,6 +115,7 @@ Your response must be a JSON object with the following fields:
     - "summary": Short summary.
     - "days": (Optional) A very brief day-by-day plan if it fits.
 - "estimatedCost": (Optional) An estimated cost.
+- "transportationAdvice": (Optional) General advice on transportation in Karnataka relevant to the user's overall trip preferences and the types of destinations suggested. For instance, 'For budget travel between cities like Mysore and Hampi, KSRTC buses are a reliable option. Within cities, auto-rickshaws are common.'
 - "additionalNotes": (Optional) Any other useful tips.
 
 Focus on providing valuable, actionable information. Ensure all Google Maps URLs are correctly formatted and query parameters are URL encoded. Use the getWeather tool for each primary recommended destination.

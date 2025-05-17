@@ -13,7 +13,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { getPersonalizedTravelRecommendations, type TravelPreferencesInput, type TravelRecommendationsOutput } from '@/ai/flows/ai-travel-assistant';
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Loader2, BotMessageSquare, MapPin, LinkIcon, ThermometerSun, ListChecks, CalendarRange, HandCoins, PlaneTakeoff } from 'lucide-react';
+import { Loader2, BotMessageSquare, MapPin, LinkIcon, ThermometerSun, ListChecks, CalendarRange, HandCoins, PlaneTakeoff, Route } from 'lucide-react';
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
@@ -253,6 +253,15 @@ export default function AiAssistantPage() {
                 </div>
               </div>
             )}
+
+            {recommendations.transportationAdvice && (
+              <div>
+                <Separator className="my-4"/>
+                <h3 className="font-semibold text-lg text-accent flex items-center"><Route className="mr-2 h-5 w-5" /> Transportation Advice:</h3>
+                <p className="text-muted-foreground whitespace-pre-wrap">{recommendations.transportationAdvice}</p>
+              </div>
+            )}
+
 
             {recommendations.estimatedCost && (
               <div>
