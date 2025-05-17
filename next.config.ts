@@ -31,13 +31,13 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'blogger.googleusercontent.com',
+        hostname: 'upload.wikimedia.org',
         port: '',
         pathname: '/**',
       },
       {
         protocol: 'https',
-        hostname: 'upload.wikimedia.org',
+        hostname: 'tripver.com',
         port: '',
         pathname: '/**',
       }
