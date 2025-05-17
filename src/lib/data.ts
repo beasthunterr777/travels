@@ -44,7 +44,7 @@ export const destinations: Destination[] = [
     name: 'Hampi',
     shortDescription: 'A UNESCO World Heritage site with ancient ruins of the Vijayanagara Empire.',
     longDescription: 'Hampi is an ancient village in the south Indian state of Karnataka. It’s dotted with numerous ruined temple complexes from the Vijayanagara Empire. On the south bank of the River Tungabhadra is the 7th-century Hindu Virupaksha Temple, near the revived Hampi Bazaar.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://karnatakatourism.org/wp-content/uploads/2020/05/Hampi.jpg',
     dataAiHint: 'ancient ruins',
     category: ['historical', 'archaeological', 'religious'],
     region: 'North Karnataka',

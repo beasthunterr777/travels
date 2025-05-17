@@ -46,13 +46,15 @@ const nextConfig: NextConfig = {
         hostname: 'cdn.britannica.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'karnatakatourism.org',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
 };
 
 export default nextConfig;
-
-    
-
-    
