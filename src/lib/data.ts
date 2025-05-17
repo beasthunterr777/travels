@@ -7,8 +7,8 @@ export const destinations: Destination[] = [
     name: 'Mysore',
     shortDescription: 'The cultural capital of Karnataka, known for its majestic palaces and vibrant traditions.',
     longDescription: 'Mysore, officially Mysuru, is a city in the southern part of Karnataka. It served as the capital city of the Kingdom of Mysore for nearly six centuries from 1399 until 1956. The city is known for its palaces, including the Mysore Palace, and for the festivities that take place during the Dasara festival.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Mysuru_Montage.jpg',
-    dataAiHint: 'mysore city',
+    imageUrl: 'https://cdn.britannica.com/58/124658-050-28314DA4/Maharaja-Palace-Mysuru-Karnataka-India.jpg',
+    dataAiHint: 'mysore city palace',
     category: ['historical', 'cultural'],
     region: 'Southern Karnataka',
     bestTimeToVisit: 'October to March',
@@ -174,6 +174,8 @@ export const sampleItineraries: Itinerary[] = [
     dataAiHint: 'beach coastal sea',
   }
 ];
+
+    
 
     
 
