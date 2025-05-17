@@ -3,25 +3,6 @@ import type { Destination, BookingLink, Itinerary } from './types';
 
 export const destinations: Destination[] = [
   {
-    id: 'bangalore',
-    name: 'Bengaluru (Bangalore)',
-    shortDescription: 'The vibrant capital of Karnataka, known as the Silicon Valley of India, blending modernity with rich history and green spaces.',
-    longDescription: 'Bengaluru, officially known as Bengaluru, is the capital of the Indian state of Karnataka. It has a population of over ten million, making it a megacity and the third-most populous city and fifth-most populous urban agglomeration in India. It is located in southern India on the Deccan Plateau. Its elevation is the highest among the major cities of India. A demographically diverse city, Bengaluru is a major economic and cultural hub and the second-fastest-growing major metropolis in India. It is home to many well-recognized educational and research institutions. Numerous state-owned aerospace and defence organisations are located in the city. The city also houses the Kannada film industry. It was ranked the most liveable Indian city with a population of over a million by the Ease of Living Index 2020.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'bangalore city',
-    category: ['city', 'modern', 'historical', 'gardens', 'nightlife'],
-    region: 'South Karnataka',
-    bestTimeToVisit: 'October to March (Pleasant weather)',
-    howToReach: {
-      air: 'Kempegowda International Airport Bengaluru (BLR) connects to domestic and international destinations.',
-      rail: 'Bengaluru City Railway Station (SBC) and Yesvantpur Junction (YPR) are major railway hubs.',
-      road: 'Excellent road network connecting to all major South Indian cities. BMTC and KSRTC buses operate extensively.',
-    },
-    attractions: ['Bangalore Palace', 'Lal Bagh Botanical Garden', 'Cubbon Park', 'Vidhana Soudha', 'ISKCON Temple Bangalore', 'National Gallery of Modern Art', 'Visvesvaraya Industrial & Technological Museum', 'Bannerghatta National Park (Safari & Zoo)'],
-    tips: ['Utilize ride-hailing apps or metro for easy commute.', 'Explore diverse culinary scenes from street food to fine dining.', 'Traffic can be heavy, plan your travel accordingly.', 'Many tech parks and startups to see if interested in the modern aspect.'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.95993135967!2d77.4661254209386!3d12.95394562249558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1710000000000'
-  },
-  {
     id: 'mysore',
     name: 'Mysore',
     shortDescription: 'The cultural capital of Karnataka, known for its majestic palaces and vibrant traditions.',
@@ -93,7 +74,26 @@ export const destinations: Destination[] = [
     },
     attractions: ['Om Beach', 'Kudle Beach', 'Half Moon Beach', 'Paradise Beach', 'Mahabaleshwar Temple'],
     tips: ['Enjoy beach trekking between the different beaches.', 'Respect local customs, especially near temples.', 'Sunsets are spectacular here.'],
-  }
+  },
+  {
+    id: 'bangalore',
+    name: 'Bengaluru (Bangalore)',
+    shortDescription: 'The vibrant capital of Karnataka, known as the Silicon Valley of India, blending modernity with rich history and green spaces.',
+    longDescription: 'Bengaluru, officially known as Bengaluru, is the capital of the Indian state of Karnataka. It has a population of over ten million, making it a megacity and the third-most populous city and fifth-most populous urban agglomeration in India. It is located in southern India on the Deccan Plateau. Its elevation is the highest among the major cities of India. A demographically diverse city, Bengaluru is a major economic and cultural hub and the second-fastest-growing major metropolis in India. It is home to many well-recognized educational and research institutions. Numerous state-owned aerospace and defence organisations are located in the city. The city also houses the Kannada film industry. It was ranked the most liveable Indian city with a population of over a million by the Ease of Living Index 2020.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'bangalore city',
+    category: ['city', 'modern', 'historical', 'gardens', 'nightlife'],
+    region: 'South Karnataka',
+    bestTimeToVisit: 'October to March (Pleasant weather)',
+    howToReach: {
+      air: 'Kempegowda International Airport Bengaluru (BLR) connects to domestic and international destinations.',
+      rail: 'Bengaluru City Railway Station (SBC) and Yesvantpur Junction (YPR) are major railway hubs.',
+      road: 'Excellent road network connecting to all major South Indian cities. BMTC and KSRTC buses operate extensively.',
+    },
+    attractions: ['Bangalore Palace', 'Lal Bagh Botanical Garden', 'Cubbon Park', 'Vidhana Soudha', 'ISKCON Temple Bangalore', 'National Gallery of Modern Art', 'Visvesvaraya Industrial & Technological Museum', 'Bannerghatta National Park (Safari & Zoo)'],
+    tips: ['Utilize ride-hailing apps or metro for easy commute.', 'Explore diverse culinary scenes from street food to fine dining.', 'Traffic can be heavy, plan your travel accordingly.', 'Many tech parks and startups to see if interested in the modern aspect.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.95993135967!2d77.4661254209386!3d12.95394562249558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1710000000000'
+  },
 ];
 
 export const bookingLinks: BookingLink[] = [
@@ -107,59 +107,84 @@ export const bookingLinks: BookingLink[] = [
     dataAiHint: 'hotel booking travel',
   },
   {
+    id: 'goibibo-hotels',
+    type: 'accommodation',
+    name: 'Goibibo Hotels',
+    url: 'https://www.goibibo.com/hotels/',
+    provider: 'Goibibo',
+    description: 'Find deals on hotels and resorts.',
+    imageUrl: 'https://placehold.co/400x200.png',
+    dataAiHint: 'resort travel',
+  },
+  {
     id: 'agoda-homes',
     type: 'accommodation',
     name: 'Agoda Homes & Hotels',
     url: 'https://www.agoda.com/',
     provider: 'Agoda',
-    description: 'Find hotels, resorts, and homes on Agoda.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Agoda_Logo_2019.svg/1200px-Agoda_Logo_2019.svg.png',
-    dataAiHint: 'travel booking logo',
-  },
-  {
-    id: 'bookingcom-hotels',
-    type: 'accommodation',
-    name: 'Booking.com Hotels',
-    url: 'https://www.booking.com/country/in.html?label=karnataka',
-    provider: 'Booking.com',
-    description: 'Book hotels and other stays in Karnataka.',
-    imageUrl: 'https://placehold.co/400x200.png',
-    dataAiHint: 'travel booking platform',
+    description: 'Book hotels, homes, and more.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Agoda_logo.png/600px-Agoda_logo.png',
+    dataAiHint: 'accommodation booking',
   },
   {
     id: 'ksrtc-booking',
     type: 'transport',
-    name: 'KSRTC Bus Tickets',
+    name: 'KSRTC Bus Booking',
     url: 'https://ksrtc.in/oprs-web/',
     provider: 'KSRTC',
-    description: 'Official site for Karnataka State Road Transport Corporation bus bookings.',
+    description: 'Official Karnataka State Road Transport Corporation bus bookings.',
     imageUrl: 'https://placehold.co/400x200.png',
     dataAiHint: 'bus ticket',
   },
   {
-    id: 'redbus-karnataka',
+    id: 'redbus',
     type: 'transport',
-    name: 'RedBus Karnataka',
-    url: 'https://www.redbus.in/bus-tickets/karnataka-RTC-ksrtc',
+    name: 'RedBus',
+    url: 'https://www.redbus.in/',
     provider: 'RedBus',
-    description: 'Book KSRTC and private bus tickets for Karnataka.',
+    description: 'Popular platform for booking bus tickets across India.',
     imageUrl: 'https://placehold.co/400x200.png',
-    dataAiHint: 'online bus booking',
+    dataAiHint: 'bus booking travel',
   },
   {
     id: 'irctc-trains',
     type: 'transport',
-    name: 'IRCTC Train Tickets',
+    name: 'IRCTC Train Booking',
     url: 'https://www.irctc.co.in/nget/train-search',
     provider: 'IRCTC',
-    description: 'Official Indian Railways site for train bookings.',
+    description: 'Official Indian Railways booking portal for train tickets.',
     imageUrl: 'https://placehold.co/400x200.png',
     dataAiHint: 'train ticket india',
   }
 ];
 
 export const itineraries: Itinerary[] = [
-  // Sample itineraries can be added here later if needed for static display
+  // Example Itineraries - These can be expanded or dynamically generated
+  {
+    id: 'coorg-3day',
+    title: '3-Day Coorg Nature Retreat',
+    duration: '3 Days / 2 Nights',
+    interests: ['nature', 'adventure', 'coffee'],
+    description: 'Experience the misty hills, lush coffee plantations, and serene waterfalls of Coorg.',
+    dailyPlan: [
+      { day: 1, title: 'Arrival & Madikeri Exploration', activities: ['Check into hotel/homestay', 'Visit Raja\'s Seat for sunset', 'Explore Madikeri Fort'] },
+      { day: 2, title: 'Waterfalls & Wildlife', activities: ['Visit Abbey Falls', 'Explore Dubare Elephant Camp', 'Optional: Talakaveri visit'] },
+      { day: 3, title: 'Coffee Plantations & Departure', activities: ['Tour a coffee plantation', 'Shop for local spices and coffee', 'Depart from Coorg'] },
+    ],
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'coorg hills'
+  },
+  {
+    id: 'hampi-2day',
+    title: '2-Day Hampi Historical Tour',
+    duration: '2 Days / 1 Night',
+    interests: ['historical', 'archaeological', 'photography'],
+    description: 'Journey back in time exploring the magnificent ruins of the Vijayanagara Empire in Hampi.',
+    dailyPlan: [
+      { day: 1, title: 'Sacred Centre & Royal Enclosure', activities: ['Visit Virupaksha Temple', 'Explore Hampi Bazaar', 'See Elephant Stables and Lotus Mahal'] },
+      { day: 2, title: 'Vittala Temple & Tungabhadra River', activities: ['Marvel at the Stone Chariot in Vittala Temple', 'Enjoy a coracle ride on Tungabhadra River (seasonal)', 'Hike Matanga Hill for panoramic views'] },
+    ],
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'hampi ruins'
+  }
 ];
-
-    
