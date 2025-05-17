@@ -3,11 +3,11 @@ import type { Destination, BookingLink, Itinerary } from './types';
 
 export const destinations: Destination[] = [
   {
-    id: 'bengaluru', // Note: ID changed to 'bengaluru' for consistency
+    id: 'bengaluru',
     name: 'Bengaluru (Bangalore)',
     shortDescription: 'The vibrant capital of Karnataka, known as the Silicon Valley of India, blending modernity with rich history and green spaces.',
     longDescription: 'Bengaluru, officially known as Bengaluru, is the capital of the Indian state of Karnataka. It has a population of over ten million, making it a megacity and the third-most populous city and fifth-most populous urban agglomeration in India. It is located in southern India on the Deccan Plateau. Its elevation is the highest among the major cities of India. A demographically diverse city, Bengaluru is a major economic and cultural hub and the second-fastest-growing major metropolis in India. It is home to many well-recognized educational and research institutions. Numerous state-owned aerospace and defence organisations are located in the city. The city also houses the Kannada film industry. It was ranked the most liveable Indian city with a population of over a million by the Ease of Living Index 2020.',
-    imageUrl:'https://kristujayanti.edu.in/collaborations/images/Tourist-Spot-Bangalore-banner.jpg',
+    imageUrl: 'https://kristujayanti.edu.in/collaborations/images/Tourist-Spot-Bangalore-banner.jpg',
     dataAiHint: 'bangalore landmarks',
     category: ['city', 'modern', 'historical', 'gardens', 'nightlife'],
     region: 'South Karnataka',
@@ -81,8 +81,8 @@ export const destinations: Destination[] = [
     name: 'Gokarna',
     shortDescription: 'A serene beach town known for its pristine beaches and sacred temples.',
     longDescription: 'Gokarna is a small temple town on the western coast of India in the Kumta taluk of Uttara Kannada district of the state of Karnataka. The main temple and deity is Lord Shiva, who is also known as Mahabaleshwara. This temple houses what is believed tobe original image of Lord Shiva\'s linga (Atmalinga).',
-    imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'beach sunset',
+    imageUrl: 'https://s7ap1.scene7.com/is/image/incredibleindia/1-om-beach-gokarna-karnataka-city-hero?qlt=82&ts=1726720866389',
+    dataAiHint: 'gokarna beach',
     category: ['beach', 'religious', 'nature'],
     region: 'Coastal Karnataka',
     bestTimeToVisit: 'October to March',
@@ -148,6 +148,3 @@ export const bookingLinks: BookingLink[] = [
 ];
 
 export const itineraries: Itinerary[] = []; // Currently no predefined itineraries
-
-
-    

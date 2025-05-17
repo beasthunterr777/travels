@@ -64,6 +64,12 @@ const nextConfig: NextConfig = {
         hostname: 'kristujayanti.edu.in',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 's7ap1.scene7.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
