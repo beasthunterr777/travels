@@ -19,7 +19,7 @@ export const destinations: Destination[] = [
     },
     attractions: ['Mysore Palace', 'Brindavan Gardens', 'Chamundeshwari Temple', 'Mysore Zoo', 'Jaganmohan Palace Art Gallery'],
     tips: ['Attend the Dasara festival if visiting in autumn.', 'Try the famous Mysore Pak sweet.', 'Explore Devaraja Market for local crafts.'],
-    mapEmbedUrl:'https://cdn.britannica.com/58/124658-050-28314DA4/Maharaja-Palace-Mysuru-Karnataka-India.jpg'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62360.40207404979!2d76.59191701049998!3d12.310893904901526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7038112f600f%3A0x425a20399ba9355d!2sMysuru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000'
   },
   {
     id: 'coorg',
@@ -174,5 +174,7 @@ export const sampleItineraries: Itinerary[] = [
     dataAiHint: 'beach coastal sea',
   }
 ];
+
+    
 
     
