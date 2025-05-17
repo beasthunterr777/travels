@@ -12,6 +12,7 @@ export default function Header() {
     { href: '/trip-planner', label: 'Trip Planner' },
     { href: '/ai-assistant', label: 'AI Assistant' },
     { href: '/booking', label: 'Booking' },
+    { href: '/transportation', label: 'Transportation' },
     { href: '/contact', label: 'Contact Us' },
   ];
 
