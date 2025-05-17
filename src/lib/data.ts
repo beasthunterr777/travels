@@ -74,6 +74,25 @@ export const destinations: Destination[] = [
     },
     attractions: ['Om Beach', 'Kudle Beach', 'Half Moon Beach', 'Paradise Beach', 'Mahabaleshwar Temple'],
     tips: ['Enjoy beach trekking between the different beaches.', 'Respect local customs, especially near temples.', 'Sunsets are spectacular here.'],
+  },
+  {
+    id: 'bangalore',
+    name: 'Bengaluru (Bangalore)',
+    shortDescription: 'The vibrant capital of Karnataka, known as the Silicon Valley of India, blending modernity with rich history and green spaces.',
+    longDescription: 'Bengaluru, officially known as Bengaluru, is the capital of the Indian state of Karnataka. It has a population of over ten million, making it a megacity and the third-most populous city and fifth-most populous urban agglomeration in India. It is located in southern India on the Deccan Plateau. Its elevation is the highest among the major cities of India. A demographically diverse city, Bengaluru is a major economic and cultural hub and the second-fastest-growing major metropolis in India. It is home to many well-recognized educational and research institutions. Numerous state-owned aerospace and defence organisations are located in the city. The city also houses the Kannada film industry. It was ranked the most liveable Indian city with a population of over a million by the Ease of Living Index 2020.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'bangalore city',
+    category: ['city', 'modern', 'historical', 'gardens', 'nightlife'],
+    region: 'South Karnataka',
+    bestTimeToVisit: 'October to March (Pleasant weather)',
+    howToReach: {
+      air: 'Kempegowda International Airport Bengaluru (BLR) connects to domestic and international destinations.',
+      rail: 'Bengaluru City Railway Station (SBC) and Yesvantpur Junction (YPR) are major railway hubs.',
+      road: 'Excellent road network connecting to all major South Indian cities. BMTC and KSRTC buses operate extensively.',
+    },
+    attractions: ['Bangalore Palace', 'Lal Bagh Botanical Garden', 'Cubbon Park', 'Vidhana Soudha', 'ISKCON Temple Bangalore', 'National Gallery of Modern Art', 'Visvesvaraya Industrial & Technological Museum', 'Bannerghatta National Park (Safari & Zoo)'],
+    tips: ['Utilize ride-hailing apps or metro for easy commute.', 'Explore diverse culinary scenes from street food to fine dining.', 'Traffic can be heavy, plan your travel accordingly.', 'Many tech parks and startups to see if interested in the modern aspect.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.95993135967!2d77.4661254209386!3d12.95394562249558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1710000000000'
   }
 ];
 
@@ -174,9 +193,3 @@ export const sampleItineraries: Itinerary[] = [
     dataAiHint: 'beach coastal sea',
   }
 ];
-
-    
-
-    
-
-    
