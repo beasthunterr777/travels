@@ -94,6 +94,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.tourism-of-india.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'boujeelife.in',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

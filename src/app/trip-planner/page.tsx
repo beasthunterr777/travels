@@ -58,7 +58,7 @@ export default function TripPlannerPage() {
     <div 
       className="space-y-8 p-4 rounded-lg"
       style={{
-        backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxyDaqtxWcldADCuzY_bJhNNmznKg-Sv7Fgg&s')",
+        backgroundImage: "url('https://boujeelife.in/cdn/shop/files/IMG_1517_1.jpg?v=1697371912&width=1946')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
