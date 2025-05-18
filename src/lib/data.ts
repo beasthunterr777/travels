@@ -325,7 +325,7 @@ export const bookingLinks: BookingLink[] = [
     url: 'https://www.goibibo.com/hotels/',
     provider: 'Goibibo',
     description: 'Book hotels and other accommodations.',
-    imageUrl: 'https://placehold.co/400x200.png',
+    imageUrl: 'https://jsak.goibibo.com/pwa_v3/pwa_growth/images/og-goibibo.aba291ed.png',
     dataAiHint: 'goibibo hotel travel',
   },
   {
@@ -385,5 +385,3 @@ export const itineraries: Itinerary[] = [
 
 // Placeholder for AI-generated itineraries - this would be populated dynamically by the AI flow
 export let aiGeneratedItineraries: Itinerary[] = [];
-
-    

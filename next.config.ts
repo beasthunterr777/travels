@@ -1,3 +1,4 @@
+
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
@@ -102,7 +103,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'promos.makemytrip.com',
+        hostname: 'jsak.goibibo.com',
         port: '',
         pathname: '/**',
       },
