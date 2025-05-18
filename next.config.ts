@@ -178,6 +178,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.shutterstock.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.mangaloretaxis.in',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
