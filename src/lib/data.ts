@@ -335,8 +335,8 @@ export const bookingLinks: BookingLink[] = [
     url: 'https://www.irctc.co.in/nget/train-search',
     provider: 'IRCTC',
     description: 'Official Indian Railways train ticket booking.',
-    imageUrl: 'https://placehold.co/400x200.png',
-    dataAiHint: 'train booking india',
+    imageUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4a/37/7e/4a377ed6-a404-7a01-c0a6-4ff2a7e64698/AppIconRelease-0-0-1x_U007emarketing-0-11-0-0-sRGB-85-220.png/1200x600wa.png',
+    dataAiHint: 'irctc app logo',
   },
   {
     id: 'redbus-booking',
@@ -395,5 +395,3 @@ export const itineraries: Itinerary[] = [
 
 // Placeholder for AI-generated itineraries - this would be populated dynamically by the AI flow
 export let aiGeneratedItineraries: Itinerary[] = [];
-
-    
