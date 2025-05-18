@@ -19,6 +19,7 @@ export const destinations: Destination[] = [
     },
     attractions: ['Bangalore Palace', 'Lal Bagh Botanical Garden', 'Cubbon Park', 'Vidhana Soudha', 'ISKCON Temple Bangalore', 'National Gallery of Modern Art', 'Visvesvaraya Industrial & Technological Museum', 'Bannerghatta National Park (Safari & Zoo)'],
     tips: ['Utilize ride-hailing apps or metro for easy commute.', 'Explore diverse culinary scenes from street food to fine dining.', 'Traffic can be heavy, plan your travel accordingly.', 'Many tech parks and startups to see if interested in the modern aspect.'],
+    popularFoods: ['Bisi Bele Bath', 'Rava Idli', 'Masala Dosa', 'Filter Coffee', 'Chow Chow Bath', 'Mangalore Buns (available in many bakeries)'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.95993135967!2d77.4661254209386!3d12.95394562249558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1710000000000'
   },
   {
@@ -38,26 +39,8 @@ export const destinations: Destination[] = [
     },
     attractions: ['Abbey Falls', 'Dubare Elephant Camp', 'Raja\'s Seat', 'Talakaveri', 'Nagarhole National Park', 'Madikeri Fort', 'Bylakuppe Golden Temple'],
     tips: ['Go for a coffee plantation tour.', 'Trekking and white water rafting (seasonal) are popular here.', 'Carry warm clothes, as it can get chilly, especially in evenings and winters.'],
+    popularFoods: ['Pandhi Curry (Pork Curry)', 'Kadambuttu (Rice Dumplings)', 'Noolputtu (String Hoppers)', 'Akki Roti', 'Bamboo Shoot Curry', 'Coorg Coffee'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000109.8316567293!2d75.00294879610768!3d12.33000207253661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5000000000001%3A0x1b3d7571370f187!2sKodagu%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000000'
-  },
-  {
-    id: 'mysore',
-    name: 'Mysore',
-    shortDescription: 'The cultural capital of Karnataka, known for its majestic palaces and vibrant traditions.',
-    longDescription: 'Mysore, officially Mysuru, is a city in the southern part of Karnataka. It served as the capital city of the Kingdom of Mysore for nearly six centuries from 1399 until 1956. The city is known for its palaces, including the Mysore Palace, and for the festivities that take place during the Dasara festival.',
-    imageUrl: 'https://cdn.britannica.com/58/124658-050-28314DA4/Maharaja-Palace-Mysuru-Karnataka-India.jpg',
-    dataAiHint: 'mysore city palace',
-    category: ['historical', 'cultural', 'palace'],
-    region: 'Southern Karnataka',
-    bestTimeToVisit: 'October to March',
-    howToReach: {
-      air: 'Nearest airport is Mysore Airport (MYQ), with limited connectivity. Kempegowda International Airport Bengaluru (BLR) is 170 km away.',
-      rail: 'Mysore Junction (MYS) is well-connected to major Indian cities.',
-      road: 'Excellent road connectivity from Bangalore and other nearby cities.',
-    },
-    attractions: ['Mysore Palace', 'Brindavan Gardens', 'Chamundeshwari Temple', 'Mysore Zoo', 'Jaganmohan Palace Art Gallery', 'St. Philomena\'s Cathedral'],
-    tips: ['Attend the Dasara festival if visiting in autumn.', 'Try the famous Mysore Pak sweet.', 'Explore Devaraja Market for local crafts and silk sarees.'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62360.40207404979!2d76.59191701049998!3d12.310893904901526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7038112f600f%3A0x425a20399ba9355d!2sMysuru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000'
   },
   {
     id: 'hampi',
@@ -76,7 +59,28 @@ export const destinations: Destination[] = [
     },
     attractions: ['Virupaksha Temple', 'Vijaya Vittala Temple (Stone Chariot)', 'Elephant Stables', 'Matanga Hill', 'Lotus Mahal', 'Hemakuta Hill Temples', 'Queen\'s Bath'],
     tips: ['Rent a bicycle or scooter to explore the vast ruins.', 'Wear comfortable shoes and carry water.', 'Hire a guide for a better understanding of the history. Engage early for better rates.'],
+    popularFoods: ['South Indian Thali', 'Idli & Dosa', 'Bajjis (fritters)', 'Holige (Obbattu)', 'Curd Rice'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61600.83376156596!2d76.43307187132981!3d15.335030134660194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb77fd3e22e5f21%3A0x7f8d448338761f6!2sHampi%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000001'
+  },
+  {
+    id: 'mysore',
+    name: 'Mysore (Mysuru)',
+    shortDescription: 'The cultural capital of Karnataka, known for its majestic palaces and vibrant traditions.',
+    longDescription: 'Mysore, officially Mysuru, is a city in the southern part of Karnataka. It served as the capital city of the Kingdom of Mysore for nearly six centuries from 1399 until 1956. The city is known for its palaces, including the Mysore Palace, and for the festivities that take place during the Dasara festival.',
+    imageUrl: 'https://cdn.britannica.com/58/124658-050-28314DA4/Maharaja-Palace-Mysuru-Karnataka-India.jpg',
+    dataAiHint: 'mysore city palace',
+    category: ['historical', 'cultural', 'palace'],
+    region: 'Southern Karnataka',
+    bestTimeToVisit: 'October to March',
+    howToReach: {
+      air: 'Nearest airport is Mysore Airport (MYQ), with limited connectivity. Kempegowda International Airport Bengaluru (BLR) is 170 km away.',
+      rail: 'Mysore Junction (MYS) is well-connected to major Indian cities.',
+      road: 'Excellent road connectivity from Bangalore and other nearby cities.',
+    },
+    attractions: ['Mysore Palace', 'Brindavan Gardens', 'Chamundeshwari Temple', 'Mysore Zoo', 'Jaganmohan Palace Art Gallery', 'St. Philomena\'s Cathedral'],
+    tips: ['Attend the Dasara festival if visiting in autumn.', 'Try the famous Mysore Pak sweet.', 'Explore Devaraja Market for local crafts and silk sarees.'],
+    popularFoods: ['Mysore Pak', 'Mysore Masala Dosa', 'Idli & Vada', 'Shavige Bath', 'Chitranna'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62360.40207404979!2d76.59191701049998!3d12.310893904901526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7038112f600f%3A0x425a20399ba9355d!2sMysuru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000'
   },
   {
     id: 'gokarna',
@@ -95,6 +99,7 @@ export const destinations: Destination[] = [
     },
     attractions: ['Om Beach', 'Kudle Beach', 'Half Moon Beach', 'Paradise Beach (Full Moon Beach)', 'Mahabaleshwar Temple', 'Mirjan Fort (nearby)'],
     tips: ['Enjoy beach trekking between the different beaches.', 'Respect local customs, especially near temples.', 'Sunsets are spectacular here. Try yoga retreats if interested.'],
+    popularFoods: ['Fresh Seafood (Fish Curry, Prawn Fry)', 'Konkani Vegetarian Thali', 'Sol Kadi', 'Goli Baje', 'Pathrode'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30879.58713782897!2d74.30107537046696!3d14.540288696100547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbe83d654503fb5%3A0x63c7132106c756f7!2sGokarna%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000002'
   },
   {
@@ -114,6 +119,7 @@ export const destinations: Destination[] = [
     },
     attractions: ['Mullayanagiri Peak', 'Baba Budangiri', 'Hebbe Falls', 'Kudremukh National Park (partially accessible)', 'Bhadra Wildlife Sanctuary', 'Jhari Waterfalls (Buttermilk Falls)', 'Coffee Museum'],
     tips: ['Explore coffee estates and try local coffee.', 'Ideal for trekking and nature walks.', 'Carry appropriate gear for trekking and rain if visiting during monsoon.', 'Roads can be winding, drive carefully.'],
+    popularFoods: ['Akki Roti', 'Malnad style Chicken/Mutton Curry', 'Filter Coffee', 'Neer Dosa', 'Kesuvina Gantu (Colocasia stem curry)'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124497.15033023983!2d75.70330287212638!3d13.331079788392163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbad93c3c083dd3%3A0x271902960307e2ac!2sChikkamagaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000003'
   },
   {
@@ -133,6 +139,7 @@ export const destinations: Destination[] = [
     },
     attractions: ['Sri Krishna Matha (Temple)', 'Malpe Beach & St. Mary\'s Island', 'Kapu Beach (Kaup Beach) & Lighthouse', 'Manipal (University Town, Anatomy Museum)', 'Pajaka Kshetra (Birthplace of Sri Madhvacharya)'],
     tips: ['Savor authentic Udupi cuisine, especially at Mitra Samaj or Diana Restaurant.', 'Visit St. Mary\'s Island for its unique basalt rock formations.', 'Dress modestly when visiting temples.', 'Try local seafood if you are a non-vegetarian.'],
+    popularFoods: ['Masala Dosa (Udupi style)', 'Goli Baje (Mangalore Bajji)', 'Neer Dosa', 'Kori Rotti (with chicken curry)', 'Seafood (Fish Fry, Prawn Ghee Roast)'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62048.19999016988!2d74.71508472103538!3d13.340881954646874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb6a542a1397%3A0x8635743563930b75!2sUdupi%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000004'
   },
   {
@@ -152,6 +159,7 @@ export const destinations: Destination[] = [
     },
     attractions: ['Badami Cave Temples (1 to 4)', 'Agastya Lake', 'Bhutanatha Group of Temples', 'Badami Fort', 'Archaeological Museum'],
     tips: ['Explore nearby Pattadakal and Aihole for a complete Chalukyan heritage experience.', 'Wear comfortable footwear as there is a bit of climbing involved.', 'Carry water and sun protection, as it can get hot.', 'Engage a local guide to understand the sculptures and history.'],
+    popularFoods: ['Jolada Rotti (Sorghum flatbread)', 'Enne Gai (Stuffed Brinjal)', 'Shenga Chutney (Peanut Chutney)', 'North Karnataka style Thali', 'Mirchi Bajji'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30655.911714163336!2d75.6600778210094!3d15.919977896302579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb81f357952e0b9%3A0x4688f766850a206a!2sBadami%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000005'
   },
   {
@@ -171,6 +179,7 @@ export const destinations: Destination[] = [
     },
     attractions: ['Panambur Beach', 'Tannirbhavi Beach', 'Kadri Manjunath Temple', 'Kudroli Gokarnath Temple', 'St. Aloysius Chapel', 'Mangaladevi Temple', 'Pilikula Nisargadhama'],
     tips: ['Try the local seafood and Mangalorean cuisine (e.g., Neer Dosa, Kori Rotti).', 'Explore the local markets.', 'Beaches can get crowded on weekends.'],
+    popularFoods: ['Mangalorean Fish Curry', 'Neer Dosa', 'Kori Rotti', 'Chicken Ghee Roast', 'Buns (sweet banana poori)', 'Gadbad Ice Cream'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124469.8096951489!2d74.77991894184215!3d12.911027011105165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x82720e91f3f75526!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000006'
   },
   {
@@ -189,6 +198,7 @@ export const destinations: Destination[] = [
     },
     attractions: ['Gomateshwara Statue (Bahubali) on Vindhyagiri Hill', 'Chandragiri Hill (smaller statues and basadis)', 'Numerous Basadis (Jain temples)', 'Bhandar Basadi'],
     tips: ['Be prepared to climb around 600 steps barefoot to reach the main statue on Vindhyagiri.', 'Carry water and wear a hat.', 'Photography is usually allowed but check specific temple rules.', 'The Mahamastakabhisheka is a unique event if your visit coincides.'],
+    popularFoods: ['Simple South Indian vegetarian meals', 'Kosambari', 'Happala (Papad)', 'Payasa (Kheer)'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31106.81751547571!2d76.46300797166222!3d12.858630501234786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf41389682970b%3A0x63bf01731c299928!2sShravanabelagola%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000007'
   },
   {
@@ -207,6 +217,7 @@ export const destinations: Destination[] = [
     },
     attractions: ['Chennakeshava Temple (Belur)', 'Hoysaleswara Temple (Halebidu)', 'Kedareshwara Temple (Halebidu)', 'Jain Basadis at Halebidu', 'Archaeological Museum at Halebidu'],
     tips: ['Hire a guide to appreciate the intricate details and stories behind the carvings.', 'Allow ample time to explore both sites thoroughly.', 'Photography is permitted in most areas.', 'Wear comfortable shoes as you will be walking a lot.'],
+    popularFoods: ['Holige (Obbattu)', 'Akki Roti', 'Ragi Mudde with Soppu Saaru', 'Traditional Kannada Thali'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31088.50227562179!2d75.83531607163169!3d13.16917020091054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5300015216867%3A0x9b935e1c74198c3b!2sBelur%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000008'
   },
   {
@@ -225,6 +236,7 @@ export const destinations: Destination[] = [
     },
     attractions: ['Virupaksha Temple', 'Mallikarjuna Temple', 'Sangameshwara Temple', 'Kashi Vishwanatha Temple', 'Galaganatha Temple', 'Jain Narayana Temple', 'Papanatha Temple'],
     tips: ['Often visited along with Aihole and Badami.', 'Hire a guide to understand the significance of different architectural styles.', 'The site is well-maintained and offers a peaceful experience.'],
+    popularFoods: ['Jolada Rotti', 'Enne Gai', 'Shenga Holige', 'North Karnataka Meals', 'Girmit'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15390.490711271825!2d75.80526602108866!3d15.948844081662799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb81ccb2e22562b%3A0x492b23fad3677c1a!2sPattadakal%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000009'
   },
   {
@@ -244,9 +256,11 @@ export const destinations: Destination[] = [
     },
     attractions: ['Murudeshwara Temple & Raja Gopura', 'World\'s Second Tallest Shiva Statue', 'Murudeshwara Beach', 'Netrani Island (for scuba diving and snorkeling, requires boat trip)', 'Statue Park with various mythological depictions'],
     tips: ['Visit early morning or late afternoon to avoid crowds and heat.', 'Take the elevator in the Raja Gopura for panoramic views.', 'Explore the beach and enjoy water sports if available.', 'Be mindful of local customs and dress modestly when visiting the temple complex.'],
+    popularFoods: ['Coastal Karnataka seafood (Fish Thali, Prawns)', 'Neer Dosa', 'Bhatkal Biryani (nearby)', 'Goli Baje', 'Coconut-based curries'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30930.785789065895!2d74.4725670212482!3d14.092928893556193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc115237162757%3A0x3c8c6a1223ac9ac!2sMurdeshwar%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000010'
   }
 ];
+
 
 export const bookingLinks: BookingLink[] = [
   {
@@ -258,47 +272,104 @@ export const bookingLinks: BookingLink[] = [
     description: 'Wide range of hotels across Karnataka.',
   },
   {
-    id: 'agoda-homes',
+    id: 'agoda-homes-hotels',
     type: 'accommodation',
     name: 'Agoda Homes & Hotels',
     url: 'https://www.agoda.com/',
     provider: 'Agoda',
-    description: 'Find homes, apartments, and hotels for your stay.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Agoda_logo.svg/1200px-Agoda_logo.svg.png',
-    dataAiHint: 'agoda booking',
+    description: 'Find great deals on homes and hotels in Karnataka.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Agoda_logo.png/600px-Agoda_logo.png',
+    dataAiHint: 'agoda booking travel',
   },
   {
-    id: 'kstdc-hotels',
+    id: 'booking-com-hotels',
     type: 'accommodation',
-    name: 'KSTDC Mayura Hotels',
-    url: 'https://www.kstdc.co/mayura-hotels/',
-    provider: 'KSTDC',
-    description: 'Government-run hotels offering reliable stays.',
+    name: 'Booking.com Hotels',
+    url: 'https://www.booking.com/',
+    provider: 'Booking.com',
+    description: 'Discover hotels and other accommodations in Karnataka.',
     imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'kstdc hotel',
+    dataAiHint: 'bookingdotcom travel hotels',
   },
   {
     id: 'ksrtc-booking',
     type: 'transport',
     name: 'KSRTC Bus Booking',
-    url: 'https://www.ksrtc.in/oprs-web/',
+    url: 'https://ksrtc.in/oprs-web/',
     provider: 'KSRTC',
-    description: 'Official portal for Karnataka state bus transport.',
+    description: 'Official Karnataka State Road Transport Corporation bus booking.',
     imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'bus ticket',
+    dataAiHint: 'bus travel ksrtc',
   },
   {
-    id: 'irctc-trains',
+    id: 'irctc-train-booking',
     type: 'transport',
     name: 'IRCTC Train Booking',
     url: 'https://www.irctc.co.in/',
     provider: 'IRCTC',
-    description: 'Official site for Indian Railways bookings.',
+    description: 'Official Indian Railways train ticket booking.',
     imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'train ticket',
+    dataAiHint: 'train travel irctc',
+  },
+  {
+    id: 'redbus-booking',
+    type: 'transport',
+    name: 'RedBus Bus Booking',
+    url: 'https://www.redbus.in/',
+    provider: 'RedBus',
+    description: 'Book bus tickets for travel within and to Karnataka.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'bus travel redbus',
   },
 ];
 
-export const itineraries: Itinerary[] = []; // Currently no predefined itineraries
-
-
+// Sample Itineraries (can be expanded)
+export const sampleItineraries: Itinerary[] = [
+  {
+    id: 'coorg-3d2n',
+    title: '3 Days Rejuvenating Coorg Escape',
+    duration: '3 Days / 2 Nights',
+    interests: ['nature', 'coffee', 'relaxation'],
+    description: 'Experience the misty hills and aromatic coffee plantations of Coorg. This itinerary balances sightseeing with relaxation.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'coorg itinerary travel',
+    dailyPlan: [
+      {
+        day: 1,
+        title: 'Arrival in Madikeri & Local Sightseeing',
+        activities: ['Check into hotel', 'Visit Raja\'s Seat for sunset views', 'Explore Madikeri Fort'],
+      },
+      {
+        day: 2,
+        title: 'Coffee Plantations & Waterfalls',
+        activities: ['Tour a coffee plantation', 'Visit Abbey Falls', 'Explore Dubare Elephant Camp (optional)'],
+      },
+      {
+        day: 3,
+        title: 'Talakaveri & Departure',
+        activities: ['Visit Talakaveri, the origin of River Cauvery', 'Explore Bhagamandala Temple', 'Depart from Coorg'],
+      },
+    ],
+  },
+  {
+    id: 'hampi-2d1n',
+    title: '2 Days Historical Hampi Exploration',
+    duration: '2 Days / 1 Night',
+    interests: ['historical', 'archaeological', 'temples'],
+    description: 'Step back in time and explore the magnificent ruins of the Vijayanagara Empire in Hampi.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'hampi ruins itinerary',
+    dailyPlan: [
+      {
+        day: 1,
+        title: 'Virupaksha Temple & Royal Enclosure',
+        activities: ['Visit Virupaksha Temple', 'Explore Hampi Bazaar', 'Discover the Royal Enclosure (Queen\'s Bath, Lotus Mahal)'],
+      },
+      {
+        day: 2,
+        title: 'Vittala Temple & Riverside Ruins',
+        activities: ['Visit Vittala Temple (Stone Chariot)', 'Explore riverside ruins along Tungabhadra', 'Climb Matanga Hill for panoramic views (optional)'],
+      },
+    ],
+  },
+];

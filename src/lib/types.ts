@@ -15,6 +15,7 @@ export interface Destination {
   };
   attractions: string[];
   tips: string[];
+  popularFoods?: string[]; // New field for popular foods
   mapEmbedUrl?: string; // For Google Maps embed
 }
 
