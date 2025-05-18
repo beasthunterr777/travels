@@ -12,28 +12,19 @@ export default function HomePage() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
-        <Image
-          src="https://bynekaadu.com/wp-content/uploads/2024/03/Places-to-Visit-in-Karnataka-Discovering-the-Splendor-of-History-Nature-and-Culture.png"
-          alt="Discovering the Splendor of History, Nature, and Culture in Karnataka"
-          data-ai-hint="karnataka travel montage"
-          layout="fill"
-          objectFit="cover"
-          priority
-          quality={85}
-        />
-        <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-start pt-12 text-center p-4">
+      <section className="relative min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-68px)] flex flex-col items-center justify-start pt-12 text-center p-4 rounded-lg shadow-xl overflow-hidden">
+        {/* The global background image from globals.css will show here */}
+        {/* Overlay for text readability over the global background */}
+        <div className="absolute inset-0 bg-black/30 z-0"></div>
+        {/* Content container, positioned above the overlay */}
+        <div className="relative z-10">
           <h1 className="text-5xl font-extrabold text-white drop-shadow-lg mb-4">
             Explore the Soul of Karnataka
           </h1>
           <p className="text-xl text-gray-200 drop-shadow-md mb-8 max-w-2xl">
             Discover breathtaking landscapes, ancient heritage, vibrant culture, and unforgettable experiences.
           </p>
-          <Button asChild size="lg" className="bg-primary hover:bg-accent text-primary-foreground hover:text-accent-foreground" suppressHydrationWarning>
-            <Link href="/trip-planner">
-              Plan Your Adventure <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+          {/* "Plan Your Adventure" button removed */}
         </div>
       </section>
 
