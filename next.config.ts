@@ -137,6 +137,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'oneday.travel',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
