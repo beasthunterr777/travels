@@ -149,6 +149,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'static2.tripoto.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
