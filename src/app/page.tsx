@@ -14,9 +14,9 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
         <Image
-          src="https://www.sushanttravels.com/blog/2019/11/1573718583.jpg"
-          alt="Beautiful landscape of Karnataka"
-          data-ai-hint="karnataka landscape"
+          src="https://bynekaadu.com/wp-content/uploads/2024/03/Places-to-Visit-in-Karnataka-Discovering-the-Splendor-of-History-Nature-and-Culture.png"
+          alt="Discovering the Splendor of History, Nature, and Culture in Karnataka"
+          data-ai-hint="karnataka travel montage"
           layout="fill"
           objectFit="cover"
           priority

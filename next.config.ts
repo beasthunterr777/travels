@@ -184,6 +184,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.mangaloretaxis.in',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'bynekaadu.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
