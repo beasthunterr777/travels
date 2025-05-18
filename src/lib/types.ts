@@ -17,8 +17,8 @@ export interface Destination {
   tips: string[];
   popularFoods?: string[];
   mapEmbedUrl?: string; // For Google Maps embed
-  entryFee?: string; // New field for entry fee
-  timings?: string; // New field for opening and closing times
+  entryFee?: string; 
+  timings?: string; 
 }
 
 export interface Itinerary {

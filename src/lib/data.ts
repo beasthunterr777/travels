@@ -325,7 +325,7 @@ export const bookingLinks: BookingLink[] = [
     url: 'https://ksrtc.in/oprs-web/',
     provider: 'KSRTC',
     description: 'Official Karnataka State Road Transport Corporation bus booking.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/en/f/fc/Karnataka_State_Road_Transportation_Corporation_Logo.png',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Karnataka_State_Road_Transportation_Corporation_Logo.png/290px-Karnataka_State_Road_Transportation_Corporation_Logo.png',
     dataAiHint: 'KSRTC logo bus',
   },
   {
@@ -384,7 +384,7 @@ export const itineraries: Itinerary[] = [
     duration: '2 Days / 1 Night',
     interests: ['historical', 'cultural', 'palace'],
     description: 'Discover the royal heritage and vibrant culture of Mysore.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Mysuru_Montage.jpg',
     dataAiHint: 'mysore palace culture',
     dailyPlan: [
       { day: 1, title: 'Palace & Zoo', activities: ['Arrive in Mysore', 'Check into hotel', 'Visit the Mysore Palace (Amba Vilas Palace)', 'Afternoon visit to Mysore Zoo (Sri Chamarajendra Zoological Gardens)', 'Evening stroll in Brindavan Gardens (if time permits & travel is arranged)'] },

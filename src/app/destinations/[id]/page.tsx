@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { MapPin, CalendarDays, Sun, Plane, Train, Car, Info, Sparkles, Tag, Navigation } from 'lucide-react';
+import { MapPin, CalendarDays, Sun, Plane, Train, Car, Info, Sparkles, Tag, Navigation, Utensils, Ticket, Clock4 } from 'lucide-react';
 
 interface DestinationDetailPageProps {
   params: { id: string };
@@ -96,6 +96,40 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
               ))}
             </ul>
           </div>
+
+          {destination.popularFoods && destination.popularFoods.length > 0 && (
+            <>
+              <Separator />
+              <div>
+                <h3 className="text-xl font-semibold text-primary mb-3 flex items-center"><Utensils className="mr-2 h-5 w-5" />Popular Foods</h3>
+                <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                  {destination.popularFoods.map((food, index) => (
+                    <li key={index}>{food}</li>
+                  ))}
+                </ul>
+              </div>
+            </>
+          )}
+
+          {destination.entryFee && (
+            <>
+              <Separator />
+              <div>
+                <h3 className="text-xl font-semibold text-primary mb-3 flex items-center"><Ticket className="mr-2 h-5 w-5" />Entry Fee</h3>
+                <p className="text-muted-foreground">{destination.entryFee}</p>
+              </div>
+            </>
+          )}
+
+          {destination.timings && (
+            <>
+              <Separator />
+              <div>
+                <h3 className="text-xl font-semibold text-primary mb-3 flex items-center"><Clock4 className="mr-2 h-5 w-5" />Timings</h3>
+                <p className="text-muted-foreground">{destination.timings}</p>
+              </div>
+            </>
+          )}
 
           <Separator />
 
