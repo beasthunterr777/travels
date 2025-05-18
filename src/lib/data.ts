@@ -315,8 +315,8 @@ export const bookingLinks: BookingLink[] = [
     url: 'https://www.makemytrip.com/hotels/',
     provider: 'MakeMyTrip',
     description: 'Wide range of hotels across Karnataka.',
-    imageUrl: 'https://placehold.co/400x200.png',
-    dataAiHint: 'makemytrip hotel travel',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Makemytrip_logo.svg/1200px-Makemytrip_logo.svg.png?20230712101321',
+    dataAiHint: 'makemytrip logo',
   },
   {
     id: 'ksrtc-booking',
@@ -397,4 +397,5 @@ export const itineraries: Itinerary[] = [
 export let aiGeneratedItineraries: Itinerary[] = [];
 
 
+    
     
