@@ -55,8 +55,18 @@ export default function TripPlannerPage() {
   };
 
   return (
-    <div className="space-y-8">
-      <Card className="shadow-lg border border-primary/30">
+    <div 
+      className="space-y-8 p-4 rounded-lg"
+      style={{
+        backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxyDaqtxWcldADCuzY_bJhNNmznKg-Sv7Fgg&s')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed', // Optional: for a fixed background effect
+        minHeight: 'calc(100vh - var(--header-height, 64px) - var(--footer-height, 64px))', // Adjust based on your header/footer height
+      }}
+    >
+      <Card className="shadow-lg border border-primary/30 bg-card/80 backdrop-blur-sm"> {/* Added transparency and blur to card for better readability */}
         <CardHeader className="text-center">
           <Wand2 className="mx-auto h-12 w-12 text-primary mb-2" />
           <CardTitle className="text-3xl font-bold text-primary">Trip Planner</CardTitle>
@@ -72,11 +82,11 @@ export default function TripPlannerPage() {
                 name="destinations"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Destinations in Karnataka</FormLabel>
+                    <FormLabel className="text-foreground/90">Destinations in Karnataka</FormLabel>
                     <FormControl>
                       <Input placeholder="e.g., Mysore, Coorg, Hampi" {...field} suppressHydrationWarning />
                     </FormControl>
-                    <FormDescription>
+                    <FormDescription className="text-muted-foreground/80">
                       Enter city or place names. Separate multiple destinations with a comma.
                     </FormDescription>
                     <FormMessage />
@@ -88,11 +98,11 @@ export default function TripPlannerPage() {
                 name="duration"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Trip Duration</FormLabel>
+                    <FormLabel className="text-foreground/90">Trip Duration</FormLabel>
                     <FormControl>
                       <Input placeholder="e.g., 3 days, 1 week, 10 days" {...field} suppressHydrationWarning />
                     </FormControl>
-                    <FormDescription>
+                    <FormDescription className="text-muted-foreground/80">
                        Specify how long your trip will be (e.g., "3 days", "1 week", "10 days").
                     </FormDescription>
                     <FormMessage />
@@ -104,11 +114,11 @@ export default function TripPlannerPage() {
                 name="interests"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Your Interests</FormLabel>
+                    <FormLabel className="text-foreground/90">Your Interests</FormLabel>
                     <FormControl>
                       <Input placeholder="e.g., historical sites, nature, adventure, food" {...field} suppressHydrationWarning />
                     </FormControl>
-                    <FormDescription>
+                    <FormDescription className="text-muted-foreground/80">
                       List your travel interests like 'temples, beaches, hiking'. Comma-separated.
                     </FormDescription>
                     <FormMessage />
@@ -131,20 +141,20 @@ export default function TripPlannerPage() {
       </Card>
 
       {error && (
-        <Alert variant="destructive">
+        <Alert variant="destructive" className="bg-destructive/80 backdrop-blur-sm text-destructive-foreground">
           <AlertTitle>Error</AlertTitle>
           <AlertDescription>{error}</AlertDescription>
         </Alert>
       )}
 
       {itinerary && itinerary.dailyPlans && (
-        <Card className="shadow-lg border border-primary/30">
+        <Card className="shadow-lg border border-primary/30 bg-card/80 backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="text-2xl text-primary">{itinerary.overallTitle || "Your Custom Itinerary"}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
             {itinerary.dailyPlans.map((plan, planIndex) => (
-              <Card key={planIndex} className="bg-card/50 p-4 rounded-lg shadow">
+              <Card key={planIndex} className="bg-card/70 p-4 rounded-lg shadow">
                 <CardHeader className="p-2">
                   <CardTitle className="text-xl text-accent flex items-center">
                     <CalendarDays className="mr-2 h-5 w-5" /> Day {plan.day}: {plan.title}
@@ -153,7 +163,7 @@ export default function TripPlannerPage() {
                 </CardHeader>
                 <CardContent className="p-2 space-y-3">
                   {plan.activities.map((activity, activityIndex) => (
-                    <div key={activityIndex} className="p-3 bg-background rounded-md shadow-sm border border-border">
+                    <div key={activityIndex} className="p-3 bg-background/80 rounded-md shadow-sm border border-border">
                       <h4 className="font-semibold text-foreground flex items-center">
                         <MountainSnow className="mr-2 h-5 w-5 text-primary/80" /> {activity.name}
                       </h4>
@@ -191,7 +201,7 @@ export default function TripPlannerPage() {
         </Card>
       )}
        {itinerary && !itinerary.dailyPlans && ( 
-        <Card className="shadow-lg border border-primary/30">
+        <Card className="shadow-lg border border-primary/30 bg-card/80 backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="text-2xl text-primary">Your Custom Itinerary</CardTitle>
           </CardHeader>
