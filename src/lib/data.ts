@@ -117,8 +117,8 @@ export const destinations: Destination[] = [
     name: 'Chikmagalur',
     shortDescription: 'Land of coffee, with misty mountains, lush green valleys, and numerous trekking trails.',
     longDescription: 'Chikmagalur is a hill station in Karnataka, a state in southwest India. To the north is Baba Budangiri, a mountain range in the Western Ghats, with 3 large caves said to be holy. Trails through forests and grasslands lead up to Mullayanagiri Peak. The cascading Hebbe Falls lie in an area of coffee plantations.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'chikmagalur hills coffee',
+    imageUrl: 'https://www.tourism-of-india.com/blog/wp-content/uploads/2018/06/Mullayanagiri-Peak.jpg',
+    dataAiHint: 'chikmagalur mullayanagiri peak',
     category: ['hill station', 'nature', 'coffee', 'trekking', 'waterfalls'],
     region: 'Malenadu',
     bestTimeToVisit: 'September to March',
@@ -395,3 +395,4 @@ export const itineraries: Itinerary[] = [
 
 // Placeholder for AI-generated itineraries - this would be populated dynamically by the AI flow
 export let aiGeneratedItineraries: Itinerary[] = [];
+
