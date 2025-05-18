@@ -13,9 +13,7 @@ export default function HomePage() {
     <div className="space-y-16">
       {/* Hero Section */}
       <section className="relative min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-68px)] flex flex-col items-center justify-start pt-12 text-center p-4 rounded-lg shadow-xl overflow-hidden">
-        {/* The global background image from globals.css will show here */}
-        {/* Overlay for text readability over the global background */}
-        <div className="absolute inset-0 bg-black/30 z-0"></div>
+        {/* The global background image from globals.css will show through here */}
         {/* Content container, positioned above the overlay */}
         <div className="relative z-10">
           <h1 className="text-5xl font-extrabold text-white drop-shadow-lg mb-4">

@@ -80,6 +80,15 @@
   }
 }
 
+@keyframes slowPan {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -87,9 +96,10 @@
   body {
     @apply bg-background text-foreground;
     background-image: url('https://karnatakatourism.org/wp-content/uploads/2020/05/Homepage-Slider-1920_850.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: 150% auto; /* Enlarged to allow panning without showing edges */
+    background-position: center center; /* Initial position */
     background-repeat: no-repeat;
     background-attachment: fixed;
+    animation: slowPan 40s linear infinite alternate; /* 40s duration, smooth, pans back and forth */
   }
 }
