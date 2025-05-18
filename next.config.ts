@@ -113,6 +113,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'photos.prnewswire.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
