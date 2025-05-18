@@ -1,9 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { destinations } from '@/lib/data';
 import { notFound } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { MapPin, CalendarDays, Sun, Plane, Train, Car, Info, Sparkles, Tag } from 'lucide-react';
+import { MapPin, CalendarDays, Sun, Plane, Train, Car, Info, Sparkles, Tag, Navigation } from 'lucide-react';
 
 interface DestinationDetailPageProps {
   params: { id: string };
@@ -21,6 +23,8 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
   if (!destination) {
     notFound();
   }
+
+  const googleMapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(destination.name + ', Karnataka')}`;
 
   return (
     <div className="space-y-8">
@@ -73,6 +77,14 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
               {destination.howToReach.air && <p><Plane className="inline-block mr-2 h-4 w-4 text-primary/70" /><strong>Air:</strong> {destination.howToReach.air}</p>}
             </div>
           </div>
+          
+          <Separator />
+
+          <Button asChild variant="default" className="w-full md:w-auto bg-primary hover:bg-accent text-primary-foreground hover:text-accent-foreground">
+            <a href={googleMapsSearchUrl} target="_blank" rel="noopener noreferrer">
+              <Navigation className="mr-2 h-5 w-5" /> Get Directions on Google Maps
+            </a>
+          </Button>
 
           <Separator />
           
@@ -100,7 +112,7 @@ export default function DestinationDetailPage({ params }: DestinationDetailPageP
             <>
               <Separator />
               <div>
-                <h3 className="text-xl font-semibold text-primary mb-3 flex items-center"><MapPin className="mr-2 h-5 w-5" />Location Map</h3>
+                <h3 className="text-xl font-semibold text-primary mb-3 flex items-center"><MapPin className="mr-2 h-5 w-5" />Location Map (Embed)</h3>
                 <div className="aspect-video rounded-lg overflow-hidden border border-muted shadow-md">
                    <iframe
                      src={destination.mapEmbedUrl}
