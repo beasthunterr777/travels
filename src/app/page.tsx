@@ -24,7 +24,11 @@ export default function HomePage() {
           <p className="text-xl text-gray-200 drop-shadow-md mb-8 max-w-2xl">
             Discover breathtaking landscapes, ancient heritage, vibrant culture, and unforgettable experiences.
           </p>
-          {/* "Plan Your Adventure" button removed */}
+          <Button asChild size="lg" className="bg-primary hover:bg-accent text-primary-foreground hover:text-accent-foreground" suppressHydrationWarning>
+            <Link href="/trip-planner">
+              Plan Your Adventure <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
         </div>
       </section>
 
