@@ -154,6 +154,79 @@ export const destinations: Destination[] = [
     tips: ['Explore nearby Pattadakal and Aihole for a complete Chalukyan heritage experience.', 'Wear comfortable footwear as there is a bit of climbing involved.', 'Carry water and sun protection, as it can get hot.', 'Engage a local guide to understand the sculptures and history.'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30655.911714163336!2d75.6600778210094!3d15.919977896302579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb81f357952e0b9%3A0x4688f766850a206a!2sBadami%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000005'
   },
+  {
+    id: 'mangalore',
+    name: 'Mangalore (Mangaluru)',
+    shortDescription: 'A vibrant coastal city known for its beaches, temples, and delicious seafood.',
+    longDescription: "Mangalore, officially known as Mangaluru, is a major commercial, industrial, educational, healthcare and banking hub of Karnataka. It is located on the Arabian Sea coast and is known for its picturesque beaches, ancient temples, and unique Tuluva culture. It's a gateway to the Western Ghats and offers a blend of urban life and natural beauty.",
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'mangalore beach city',
+    category: ['coastal', 'city', 'religious', 'cuisine', 'beach'],
+    region: 'Coastal Karnataka',
+    bestTimeToVisit: 'September to April',
+    howToReach: {
+      air: 'Mangalore International Airport (IXE) has good domestic and international connectivity.',
+      rail: 'Mangalore Central (MAQ) and Mangalore Junction (MAJN) are major railway stations.',
+      road: 'Well-connected by NH-66 and other state highways.',
+    },
+    attractions: ['Panambur Beach', 'Tannirbhavi Beach', 'Kadri Manjunath Temple', 'Kudroli Gokarnath Temple', 'St. Aloysius Chapel', 'Mangaladevi Temple', 'Pilikula Nisargadhama'],
+    tips: ['Try the local seafood and Mangalorean cuisine (e.g., Neer Dosa, Kori Rotti).', 'Explore the local markets.', 'Beaches can get crowded on weekends.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124469.8096951489!2d74.77991894184215!3d12.911027011105165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x82720e91f3f75526!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000006'
+  },
+  {
+    id: 'shravanabelagola',
+    name: 'Shravanabelagola',
+    shortDescription: 'Renowned Jain pilgrimage center with the colossal monolithic statue of Gomateshwara.',
+    longDescription: "Shravanabelagola is one of the most important Jain tirthas (pilgrimage destinations) in Southern India. It is famous for the 57-foot tall monolithic statue of Gomateshwara (Bahubali), which is considered to be the world's largest monolithic statue. The Mahamastakabhisheka festival, held once every 12 years, attracts millions of devotees.",
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'gomateshwara statue jain',
+    category: ['religious', 'historical', 'cultural', 'pilgrimage', 'architectural'],
+    region: 'South Karnataka (Hassan District)',
+    bestTimeToVisit: 'October to March (pleasant for climbing the hill)',
+    howToReach: {
+      rail: 'Nearest major railway station is Hassan (approx. 50 km).',
+      road: 'Well-connected by road from Bangalore (approx. 145 km) and Mysore.',
+    },
+    attractions: ['Gomateshwara Statue (Bahubali) on Vindhyagiri Hill', 'Chandragiri Hill (smaller statues and basadis)', 'Numerous Basadis (Jain temples)', 'Bhandar Basadi'],
+    tips: ['Be prepared to climb around 600 steps barefoot to reach the main statue on Vindhyagiri.', 'Carry water and wear a hat.', 'Photography is usually allowed but check specific temple rules.', 'The Mahamastakabhisheka is a unique event if your visit coincides.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31106.81751547571!2d76.46300797166222!3d12.858630501234786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf41389682970b%3A0x63bf01731c299928!2sShravanabelagola%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000007'
+  },
+  {
+    id: 'belur-halebidu',
+    name: 'Belur & Halebidu',
+    shortDescription: 'Twin temple towns showcasing exquisite Hoysala architecture and intricate carvings.',
+    longDescription: 'Belur and Halebidu are twin towns in Hassan district, famous for their magnificent Hoysala temples. These temples are renowned for their intricate carvings, detailed sculptures, and unique star-shaped architecture. They represent the pinnacle of Hoysala artistic achievement and are a testament to the rich cultural heritage of Karnataka.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'hoysala temple architecture',
+    category: ['historical', 'archaeological', 'religious', 'cultural', 'architectural'],
+    region: 'South Karnataka (Hassan District)',
+    bestTimeToVisit: 'October to March',
+    howToReach: {
+      rail: 'Nearest railway station is Hassan (approx. 30-40 km).',
+      road: 'Well-connected by road from Hassan, Bangalore (approx. 220 km), and Mysore.',
+    },
+    attractions: ['Chennakeshava Temple (Belur)', 'Hoysaleswara Temple (Halebidu)', 'Kedareshwara Temple (Halebidu)', 'Jain Basadis at Halebidu', 'Archaeological Museum at Halebidu'],
+    tips: ['Hire a guide to appreciate the intricate details and stories behind the carvings.', 'Allow ample time to explore both sites thoroughly.', 'Photography is permitted in most areas.', 'Wear comfortable shoes as you will be walking a lot.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31088.50227562179!2d75.83531607163169!3d13.16917020091054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5300015216867%3A0x9b935e1c74198c3b!2sBelur%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000008'
+  },
+  {
+    id: 'pattadakal',
+    name: 'Pattadakal',
+    shortDescription: 'A UNESCO World Heritage site with a harmonious blend of North and South Indian temple architectural styles.',
+    longDescription: 'Pattadakal, located on the banks of the Malaprabha River, is a UNESCO World Heritage site renowned for its 7th and 8th-century Hindu and Jain temples. It represents the culmination of Chalukyan architecture, uniquely blending Dravidian (Southern) and Nagara (Northern) styles. This site was used for Chalukyan coronations.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'pattadakal temples unesco',
+    category: ['historical', 'archaeological', 'religious', 'unesco', 'cultural', 'architectural'],
+    region: 'North Karnataka (Bagalkot District)',
+    bestTimeToVisit: 'October to March',
+    howToReach: {
+      rail: 'Nearest railway station is Badami (BDM), about 22 km away.',
+      road: 'Well-connected by road from Badami, Aihole, Hubli, and Bijapur.',
+    },
+    attractions: ['Virupaksha Temple', 'Mallikarjuna Temple', 'Sangameshwara Temple', 'Kashi Vishwanatha Temple', 'Galaganatha Temple', 'Jain Narayana Temple', 'Papanatha Temple'],
+    tips: ['Often visited along with Aihole and Badami.', 'Hire a guide to understand the significance of different architectural styles.', 'The site is well-maintained and offers a peaceful experience.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15390.490711271825!2d75.80526602108866!3d15.948844081662799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb81ccb2e22562b%3A0x492b23fad3677c1a!2sPattadakal%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000009'
+  },
 ];
 
 export const bookingLinks: BookingLink[] = [
