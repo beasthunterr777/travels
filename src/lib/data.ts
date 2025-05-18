@@ -22,25 +22,6 @@ export const destinations: Destination[] = [
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.95993135967!2d77.4661254209386!3d12.95394562249558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1710000000000'
   },
   {
-    id: 'mysore',
-    name: 'Mysore',
-    shortDescription: 'The cultural capital of Karnataka, known for its majestic palaces and vibrant traditions.',
-    longDescription: 'Mysore, officially Mysuru, is a city in the southern part of Karnataka. It served as the capital city of the Kingdom of Mysore for nearly six centuries from 1399 until 1956. The city is known for its palaces, including the Mysore Palace, and for the festivities that take place during the Dasara festival.',
-    imageUrl: 'https://cdn.britannica.com/58/124658-050-28314DA4/Maharaja-Palace-Mysuru-Karnataka-India.jpg',
-    dataAiHint: 'mysore city palace',
-    category: ['historical', 'cultural', 'palace'],
-    region: 'Southern Karnataka',
-    bestTimeToVisit: 'October to March',
-    howToReach: {
-      air: 'Nearest airport is Mysore Airport (MYQ), with limited connectivity. Kempegowda International Airport Bengaluru (BLR) is 170 km away.',
-      rail: 'Mysore Junction (MYS) is well-connected to major Indian cities.',
-      road: 'Excellent road connectivity from Bangalore and other nearby cities.',
-    },
-    attractions: ['Mysore Palace', 'Brindavan Gardens', 'Chamundeshwari Temple', 'Mysore Zoo', 'Jaganmohan Palace Art Gallery', 'St. Philomena\'s Cathedral'],
-    tips: ['Attend the Dasara festival if visiting in autumn.', 'Try the famous Mysore Pak sweet.', 'Explore Devaraja Market for local crafts and silk sarees.'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62360.40207404979!2d76.59191701049998!3d12.310893904901526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7038112f600f%3A0x425a20399ba9355d!2sMysuru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000'
-  },
-  {
     id: 'coorg',
     name: 'Coorg (Kodagu)',
     shortDescription: 'The "Scotland of India," famous for its coffee plantations, misty hills, and lush forests.',
@@ -58,6 +39,25 @@ export const destinations: Destination[] = [
     attractions: ['Abbey Falls', 'Dubare Elephant Camp', 'Raja\'s Seat', 'Talakaveri', 'Nagarhole National Park', 'Madikeri Fort', 'Bylakuppe Golden Temple'],
     tips: ['Go for a coffee plantation tour.', 'Trekking and white water rafting (seasonal) are popular here.', 'Carry warm clothes, as it can get chilly, especially in evenings and winters.'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000109.8316567293!2d75.00294879610768!3d12.33000207253661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5000000000001%3A0x1b3d7571370f187!2sKodagu%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000000'
+  },
+  {
+    id: 'mysore',
+    name: 'Mysore',
+    shortDescription: 'The cultural capital of Karnataka, known for its majestic palaces and vibrant traditions.',
+    longDescription: 'Mysore, officially Mysuru, is a city in the southern part of Karnataka. It served as the capital city of the Kingdom of Mysore for nearly six centuries from 1399 until 1956. The city is known for its palaces, including the Mysore Palace, and for the festivities that take place during the Dasara festival.',
+    imageUrl: 'https://cdn.britannica.com/58/124658-050-28314DA4/Maharaja-Palace-Mysuru-Karnataka-India.jpg',
+    dataAiHint: 'mysore city palace',
+    category: ['historical', 'cultural', 'palace'],
+    region: 'Southern Karnataka',
+    bestTimeToVisit: 'October to March',
+    howToReach: {
+      air: 'Nearest airport is Mysore Airport (MYQ), with limited connectivity. Kempegowda International Airport Bengaluru (BLR) is 170 km away.',
+      rail: 'Mysore Junction (MYS) is well-connected to major Indian cities.',
+      road: 'Excellent road connectivity from Bangalore and other nearby cities.',
+    },
+    attractions: ['Mysore Palace', 'Brindavan Gardens', 'Chamundeshwari Temple', 'Mysore Zoo', 'Jaganmohan Palace Art Gallery', 'St. Philomena\'s Cathedral'],
+    tips: ['Attend the Dasara festival if visiting in autumn.', 'Try the famous Mysore Pak sweet.', 'Explore Devaraja Market for local crafts and silk sarees.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62360.40207404979!2d76.59191701049998!3d12.310893904901526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7038112f600f%3A0x425a20399ba9355d!2sMysuru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000'
   },
   {
     id: 'hampi',
@@ -227,6 +227,25 @@ export const destinations: Destination[] = [
     tips: ['Often visited along with Aihole and Badami.', 'Hire a guide to understand the significance of different architectural styles.', 'The site is well-maintained and offers a peaceful experience.'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15390.490711271825!2d75.80526602108866!3d15.948844081662799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb81ccb2e22562b%3A0x492b23fad3677c1a!2sPattadakal%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000009'
   },
+  {
+    id: 'murudeshwara',
+    name: 'Murudeshwara',
+    shortDescription: 'Famous for its towering Shiva statue, temple by the sea, and scenic beach.',
+    longDescription: 'Murudeshwara is a town in Bhatkal Taluk of Uttara Kannada district in the state of Karnataka, India. The town is known for the world\'s second tallest Shiva statue (the tallest being in Nepal), the Murudeshwara Temple, and its beautiful beach. The temple is built on Kanduka Hill, surrounded on three sides by the waters of the Arabian Sea.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'murudeshwara shiva statue',
+    category: ['religious', 'coastal', 'beach', 'pilgrimage', 'iconic'],
+    region: 'Coastal Karnataka',
+    bestTimeToVisit: 'October to March',
+    howToReach: {
+      air: 'Nearest airport is Mangalore (IXE), approximately 160 km away.',
+      rail: 'Murudeshwar railway station (MRDW) is on the Konkan Railway line and has good connectivity.',
+      road: 'Located on NH-66, it is easily accessible by bus from Mangalore, Udupi, Goa, and other major cities.',
+    },
+    attractions: ['Murudeshwara Temple & Raja Gopura', 'World\'s Second Tallest Shiva Statue', 'Murudeshwara Beach', 'Netrani Island (for scuba diving and snorkeling, requires boat trip)', 'Statue Park with various mythological depictions'],
+    tips: ['Visit early morning or late afternoon to avoid crowds and heat.', 'Take the elevator in the Raja Gopura for panoramic views.', 'Explore the beach and enjoy water sports if available.', 'Be mindful of local customs and dress modestly when visiting the temple complex.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30930.785789065895!2d74.4725670212482!3d14.092928893556193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc115237162757%3A0x3c8c6a1223ac9ac!2sMurdeshwar%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000010'
+  }
 ];
 
 export const bookingLinks: BookingLink[] = [
@@ -281,4 +300,5 @@ export const bookingLinks: BookingLink[] = [
 ];
 
 export const itineraries: Itinerary[] = []; // Currently no predefined itineraries
+
 
