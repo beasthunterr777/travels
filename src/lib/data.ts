@@ -117,7 +117,7 @@ export const destinations: Destination[] = [
     name: 'Chikmagalur',
     shortDescription: 'Land of coffee, with misty mountains, lush green valleys, and numerous trekking trails.',
     longDescription: 'Chikmagalur is a hill station in Karnataka, a state in southwest India. To the north is Baba Budangiri, a mountain range in the Western Ghats, with 3 large caves said to be holy. Trails through forests and grasslands lead up to Mullayanagiri Peak. The cascading Hebbe Falls lie in an area of coffee plantations.',
-    imageUrl: 'https://i.ytimg.com/vi/3uWYruCPta0/maxresdefault.jpg',
+    imageUrl: 'https://www.tourism-of-india.com/blog/wp-content/uploads/2020/08/Mullayanagiri-Peak.jpg',
     dataAiHint: 'chikmagalur mullayanagiri peak',
     category: ['hill station', 'nature', 'coffee', 'trekking', 'waterfalls'],
     region: 'Malenadu',
@@ -238,7 +238,7 @@ export const destinations: Destination[] = [
     attractions: ['Chennakeshava Temple (Belur)', 'Hoysaleswara Temple (Halebidu)', 'Kedareshwara Temple (Halebidu)', 'Jain Basadis at Halebidu', 'Archaeological Museum at Halebidu'],
     tips: ['Hire a guide to appreciate the intricate details and stories behind the carvings.', 'Allow ample time to explore both sites thoroughly.', 'Photography is permitted in most areas.', 'Wear comfortable shoes as you will be walking a lot.'],
     popularFoods: ['Holige (Obbattu)', 'Akki Roti', 'Ragi Mudde with Soppu Saaru', 'Traditional Kannada Thali'],
-    mapEmbedUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Courtyard_of_Chennakesava_Temple_-_Belur.jpg/500px-The_Courtyard_of_Chennakesava_Temple_-_Belur.jpg',
+    mapEmbedUrl:'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Courtyard_of_Chennakesava_Temple_-_Belur.jpg/500px-The_Courtyard_of_Chennakesava_Temple_-_Belur.jpg',
     entryFee: 'Chennakeshava Temple (Belur): Free. Hoysaleswara Temple (Halebidu): Free. Museum at Halebidu: INR 5.',
     timings: 'Temples generally open from 7:30 AM - 5:30 PM or 6:30 PM (may close for lunch break). Museum: 10:00 AM - 5:00 PM (Closed on Fridays).',
   },
@@ -395,4 +395,3 @@ export const itineraries: Itinerary[] = [
 
 // Placeholder for AI-generated itineraries - this would be populated dynamically by the AI flow
 export let aiGeneratedItineraries: Itinerary[] = [];
-
