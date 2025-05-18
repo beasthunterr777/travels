@@ -28,7 +28,7 @@ export const destinations: Destination[] = [
     longDescription: 'Mysore, officially Mysuru, is a city in the southern part of Karnataka. It served as the capital city of the Kingdom of Mysore for nearly six centuries from 1399 until 1956. The city is known for its palaces, including the Mysore Palace, and for the festivities that take place during the Dasara festival.',
     imageUrl: 'https://cdn.britannica.com/58/124658-050-28314DA4/Maharaja-Palace-Mysuru-Karnataka-India.jpg',
     dataAiHint: 'mysore city palace',
-    category: ['historical', 'cultural'],
+    category: ['historical', 'cultural', 'palace'],
     region: 'Southern Karnataka',
     bestTimeToVisit: 'October to March',
     howToReach: {
@@ -36,8 +36,8 @@ export const destinations: Destination[] = [
       rail: 'Mysore Junction (MYS) is well-connected to major Indian cities.',
       road: 'Excellent road connectivity from Bangalore and other nearby cities.',
     },
-    attractions: ['Mysore Palace', 'Brindavan Gardens', 'Chamundeshwari Temple', 'Mysore Zoo', 'Jaganmohan Palace Art Gallery'],
-    tips: ['Attend the Dasara festival if visiting in autumn.', 'Try the famous Mysore Pak sweet.', 'Explore Devaraja Market for local crafts.'],
+    attractions: ['Mysore Palace', 'Brindavan Gardens', 'Chamundeshwari Temple', 'Mysore Zoo', 'Jaganmohan Palace Art Gallery', 'St. Philomena\'s Cathedral'],
+    tips: ['Attend the Dasara festival if visiting in autumn.', 'Try the famous Mysore Pak sweet.', 'Explore Devaraja Market for local crafts and silk sarees.'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62360.40207404979!2d76.59191701049998!3d12.310893904901526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7038112f600f%3A0x425a20399ba9355d!2sMysuru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000'
   },
   {
@@ -47,7 +47,7 @@ export const destinations: Destination[] = [
     longDescription: 'Kodagu, also known as Coorg, is an administrative district in Karnataka, India. It occupies an area of 4,102 square kilometres (1,584 sq mi) in the Western Ghats of southwestern Karnataka. It is a popular tourist destination known for its coffee plantations, cool climate, and scenic beauty.',
     imageUrl: 'https://tripver.com/wp-content/uploads/2024/08/coorg-karnataka.jpg',
     dataAiHint: 'coffee plantation',
-    category: ['nature', 'adventure'],
+    category: ['nature', 'adventure', 'hill station', 'coffee'],
     region: 'Malenadu',
     bestTimeToVisit: 'September to May',
     howToReach: {
@@ -55,8 +55,9 @@ export const destinations: Destination[] = [
       rail: 'Nearest railway stations are Mysore, Mangalore, and Hassan.',
       road: 'Well-connected by road from Mysore, Mangalore, and Bangalore.',
     },
-    attractions: ['Abbey Falls', 'Dubare Elephant Camp', 'Raja\'s Seat', 'Talakaveri', 'Nagarhole National Park', 'Madikeri Fort'],
-    tips: ['Go for a coffee plantation tour.', 'Trekking is popular here.', 'Carry warm clothes, as it can get chilly.'],
+    attractions: ['Abbey Falls', 'Dubare Elephant Camp', 'Raja\'s Seat', 'Talakaveri', 'Nagarhole National Park', 'Madikeri Fort', 'Bylakuppe Golden Temple'],
+    tips: ['Go for a coffee plantation tour.', 'Trekking and white water rafting (seasonal) are popular here.', 'Carry warm clothes, as it can get chilly, especially in evenings and winters.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000109.8316567293!2d75.00294879610768!3d12.33000207253661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5000000000001%3A0x1b3d7571370f187!2sKodagu%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000000'
   },
   {
     id: 'hampi',
@@ -65,7 +66,7 @@ export const destinations: Destination[] = [
     longDescription: 'Hampi is an ancient village in the south Indian state of Karnataka. It’s dotted with numerous ruined temple complexes from the Vijayanagara Empire. On the south bank of the River Tungabhadra is the 7th-century Hindu Virupaksha Temple, near the revived Hampi Bazaar.',
     imageUrl: 'https://karnatakatourism.org/wp-content/uploads/2020/05/Hampi.jpg',
     dataAiHint: 'ancient ruins',
-    category: ['historical', 'archaeological', 'religious'],
+    category: ['historical', 'archaeological', 'religious', 'unesco'],
     region: 'North Karnataka',
     bestTimeToVisit: 'October to February',
     howToReach: {
@@ -73,8 +74,9 @@ export const destinations: Destination[] = [
       rail: 'Nearest railway station is Hospet Junction (HPT), about 13 km away.',
       road: 'Connected by road from Bangalore, Hyderabad, and Goa.',
     },
-    attractions: ['Virupaksha Temple', 'Vijaya Vittala Temple (Stone Chariot)', 'Elephant Stables', 'Matanga Hill', 'Lotus Mahal'],
-    tips: ['Rent a bicycle or scooter to explore the vast ruins.', 'Wear comfortable shoes.', 'Hire a guide for a better understanding of the history.'],
+    attractions: ['Virupaksha Temple', 'Vijaya Vittala Temple (Stone Chariot)', 'Elephant Stables', 'Matanga Hill', 'Lotus Mahal', 'Hemakuta Hill Temples', 'Queen\'s Bath'],
+    tips: ['Rent a bicycle or scooter to explore the vast ruins.', 'Wear comfortable shoes and carry water.', 'Hire a guide for a better understanding of the history. Engage early for better rates.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61600.83376156596!2d76.43307187132981!3d15.335030134660194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb77fd3e22e5f21%3A0x7f8d448338761f6!2sHampi%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000001'
   },
   {
     id: 'gokarna',
@@ -83,7 +85,7 @@ export const destinations: Destination[] = [
     longDescription: 'Gokarna is a small temple town on the western coast of India in the Kumta taluk of Uttara Kannada district of the state of Karnataka. The main temple and deity is Lord Shiva, who is also known as Mahabaleshwara. This temple houses what is believed tobe original image of Lord Shiva\'s linga (Atmalinga).',
     imageUrl: 'https://s7ap1.scene7.com/is/image/incredibleindia/1-om-beach-gokarna-karnataka-city-hero?qlt=82&ts=1726720866389',
     dataAiHint: 'gokarna beach',
-    category: ['beach', 'religious', 'nature'],
+    category: ['beach', 'religious', 'nature', 'pilgrimage'],
     region: 'Coastal Karnataka',
     bestTimeToVisit: 'October to March',
     howToReach: {
@@ -91,8 +93,66 @@ export const destinations: Destination[] = [
       rail: 'Gokarna Road (GOK) railway station is about 10km from town, on the Konkan Railway line.',
       road: 'Well-connected by bus from major cities like Bangalore, Mangalore, and Goa.',
     },
-    attractions: ['Om Beach', 'Kudle Beach', 'Half Moon Beach', 'Paradise Beach', 'Mahabaleshwar Temple'],
-    tips: ['Enjoy beach trekking between the different beaches.', 'Respect local customs, especially near temples.', 'Sunsets are spectacular here.'],
+    attractions: ['Om Beach', 'Kudle Beach', 'Half Moon Beach', 'Paradise Beach (Full Moon Beach)', 'Mahabaleshwar Temple', 'Mirjan Fort (nearby)'],
+    tips: ['Enjoy beach trekking between the different beaches.', 'Respect local customs, especially near temples.', 'Sunsets are spectacular here. Try yoga retreats if interested.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30879.58713782897!2d74.30107537046696!3d14.540288696100547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbe83d654503fb5%3A0x63c7132106c756f7!2sGokarna%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000002'
+  },
+  {
+    id: 'chikmagalur',
+    name: 'Chikmagalur',
+    shortDescription: 'Land of coffee, with misty mountains, lush green valleys, and numerous trekking trails.',
+    longDescription: 'Chikmagalur is a hill station in Karnataka, a state in southwest India. To the north is Baba Budangiri, a mountain range in the Western Ghats, with 3 large caves said to be holy. Trails through forests and grasslands lead up to Mullayanagiri Peak. The cascading Hebbe Falls lie in an area of coffee plantations.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'chikmagalur hills coffee',
+    category: ['hill station', 'nature', 'coffee', 'trekking', 'waterfalls'],
+    region: 'Malenadu',
+    bestTimeToVisit: 'September to March',
+    howToReach: {
+      air: 'Nearest airport is Mangalore (IXE), approximately 160 km away.',
+      rail: 'Kadur Junction (DRU) is the nearest railway station, about 40 km away. Birur Junction is also nearby.',
+      road: 'Well-connected by road from Bangalore (approx. 240 km), Mangalore, and Mysore.',
+    },
+    attractions: ['Mullayanagiri Peak', 'Baba Budangiri', 'Hebbe Falls', 'Kudremukh National Park (partially accessible)', 'Bhadra Wildlife Sanctuary', 'Jhari Waterfalls (Buttermilk Falls)', 'Coffee Museum'],
+    tips: ['Explore coffee estates and try local coffee.', 'Ideal for trekking and nature walks.', 'Carry appropriate gear for trekking and rain if visiting during monsoon.', 'Roads can be winding, drive carefully.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124497.15033023983!2d75.70330287212638!3d13.331079788392163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbad93c3c083dd3%3A0x271902960307e2ac!2sChikkamagaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000003'
+  },
+  {
+    id: 'udupi',
+    name: 'Udupi',
+    shortDescription: 'A coastal town famous for its Krishna Temple, delectable Udupi cuisine, and serene beaches.',
+    longDescription: 'Udupi is a city in the southwest Indian State of Karnataka. It is the administrative headquarters of Udupi District. Udupi is notable for the Krishna Temple and is also known as the temple city. It lends its name to the popular Udupi cuisine. It is also known as Lord Parashurama Kshetra, and is famous for Kanakana Kindi.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'udupi temple beach',
+    category: ['religious', 'beach', 'cuisine', 'coastal', 'culture'],
+    region: 'Coastal Karnataka',
+    bestTimeToVisit: 'October to March',
+    howToReach: {
+      air: 'Nearest airport is Mangalore (IXE), approximately 60 km away.',
+      rail: 'Udupi railway station (UD) is on the Konkan Railway line, well-connected to major cities.',
+      road: 'Excellent road connectivity along NH-66, connecting to Mangalore, Goa, and other coastal towns.',
+    },
+    attractions: ['Sri Krishna Matha (Temple)', 'Malpe Beach & St. Mary\'s Island', 'Kapu Beach (Kaup Beach) & Lighthouse', 'Manipal (University Town, Anatomy Museum)', 'Pajaka Kshetra (Birthplace of Sri Madhvacharya)'],
+    tips: ['Savor authentic Udupi cuisine, especially at Mitra Samaj or Diana Restaurant.', 'Visit St. Mary\'s Island for its unique basalt rock formations.', 'Dress modestly when visiting temples.', 'Try local seafood if you are a non-vegetarian.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62048.19999016988!2d74.71508472103538!3d13.340881954646874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb6a542a1397%3A0x8635743563930b75!2sUdupi%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000004'
+  },
+  {
+    id: 'badami',
+    name: 'Badami',
+    shortDescription: 'Historic site known for its ancient rock-cut cave temples and Agastya Lake.',
+    longDescription: 'Badami, formerly known as Vatapi, is a town and headquarters of a taluk by the same name in the Bagalkot district of Karnataka, India. It was the regal capital of the Badami Chalukyas from CE 540 to 757. It is famous for its rock-cut structural temples. It is located in a ravine at the foot of a rugged, red sandstone outcrop that surrounds Agastya lake.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'badami caves temple',
+    category: ['historical', 'archaeological', 'religious', 'unesco-candidate'],
+    region: 'North Karnataka',
+    bestTimeToVisit: 'October to March',
+    howToReach: {
+      air: 'Nearest airport is Hubli (HBX), approximately 105 km away.',
+      rail: 'Badami railway station (BDM) is well-connected.',
+      road: 'Regular buses connect Badami to Hubli, Bijapur, Bangalore and other nearby towns.',
+    },
+    attractions: ['Badami Cave Temples (1 to 4)', 'Agastya Lake', 'Bhutanatha Group of Temples', 'Badami Fort', 'Archaeological Museum'],
+    tips: ['Explore nearby Pattadakal and Aihole for a complete Chalukyan heritage experience.', 'Wear comfortable footwear as there is a bit of climbing involved.', 'Carry water and sun protection, as it can get hot.', 'Engage a local guide to understand the sculptures and history.'],
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30655.911714163336!2d75.6600778210094!3d15.919977896302579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb81f357952e0b9%3A0x4688f766850a206a!2sBadami%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000005'
   },
 ];
 
@@ -148,3 +208,4 @@ export const bookingLinks: BookingLink[] = [
 ];
 
 export const itineraries: Itinerary[] = []; // Currently no predefined itineraries
+
