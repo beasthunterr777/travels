@@ -20,7 +20,9 @@ export const destinations: Destination[] = [
     attractions: ['Bangalore Palace', 'Lal Bagh Botanical Garden', 'Cubbon Park', 'Vidhana Soudha', 'ISKCON Temple Bangalore', 'National Gallery of Modern Art', 'Visvesvaraya Industrial & Technological Museum', 'Bannerghatta National Park (Safari & Zoo)'],
     tips: ['Utilize ride-hailing apps or metro for easy commute.', 'Explore diverse culinary scenes from street food to fine dining.', 'Traffic can be heavy, plan your travel accordingly.', 'Many tech parks and startups to see if interested in the modern aspect.'],
     popularFoods: ['Bisi Bele Bath', 'Rava Idli', 'Masala Dosa', 'Filter Coffee', 'Chow Chow Bath', 'Mangalore Buns (available in many bakeries)'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.95993135967!2d77.4661254209386!3d12.95394562249558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1710000000000'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.95993135967!2d77.4661254209386!3d12.95394562249558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1710000000000',
+    entryFee: 'Varies by attraction (e.g., Bangalore Palace: INR 230 for Indians, INR 460 for Foreigners; Lal Bagh: INR 25). Many parks free.',
+    timings: 'Most attractions open 10:00 AM - 5:30 PM. Parks may have longer hours. Check specific locations.',
   },
   {
     id: 'coorg',
@@ -40,7 +42,9 @@ export const destinations: Destination[] = [
     attractions: ['Abbey Falls', 'Dubare Elephant Camp', 'Raja\'s Seat', 'Talakaveri', 'Nagarhole National Park', 'Madikeri Fort', 'Bylakuppe Golden Temple'],
     tips: ['Go for a coffee plantation tour.', 'Trekking and white water rafting (seasonal) are popular here.', 'Carry warm clothes, as it can get chilly, especially in evenings and winters.'],
     popularFoods: ['Pandhi Curry (Pork Curry)', 'Kadambuttu (Rice Dumplings)', 'Noolputtu (String Hoppers)', 'Akki Roti', 'Bamboo Shoot Curry', 'Coorg Coffee'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000109.8316567293!2d75.00294879610768!3d12.33000207253661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5000000000001%3A0x1b3d7571370f187!2sKodagu%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000000'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000109.8316567293!2d75.00294879610768!3d12.33000207253661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5000000000001%3A0x1b3d7571370f187!2sKodagu%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000000',
+    entryFee: 'Abbey Falls: INR 15; Raja\'s Seat: INR 5; Dubare Elephant Camp: Varies based on activities. Most natural spots are free.',
+    timings: 'Attractions typically 9:00 AM - 5:00 PM. Raja\'s Seat is popular for sunrise/sunset.',
   },
   {
     id: 'hampi',
@@ -60,7 +64,9 @@ export const destinations: Destination[] = [
     attractions: ['Virupaksha Temple', 'Vijaya Vittala Temple (Stone Chariot)', 'Elephant Stables', 'Matanga Hill', 'Lotus Mahal', 'Hemakuta Hill Temples', 'Queen\'s Bath'],
     tips: ['Rent a bicycle or scooter to explore the vast ruins.', 'Wear comfortable shoes and carry water.', 'Hire a guide for a better understanding of the history. Engage early for better rates.'],
     popularFoods: ['South Indian Thali', 'Idli & Dosa', 'Bajjis (fritters)', 'Holige (Obbattu)', 'Curd Rice'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61600.83376156596!2d76.43307187132981!3d15.335030134660194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb77fd3e22e5f21%3A0x7f8d448338761f6!2sHampi%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000001'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61600.83376156596!2d76.43307187132981!3d15.335030134660194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb77fd3e22e5f21%3A0x7f8d448338761f6!2sHampi%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000001',
+    entryFee: 'Composite ticket for Vijaya Vittala Temple, Elephant Stables, Lotus Mahal: INR 40 for Indians, INR 600 for Foreigners. Virupaksha Temple has a nominal fee. Many ruins are free to explore.',
+    timings: 'Most monuments: 8:30 AM - 5:30 PM. Virupaksha Temple has longer hours for worship.',
   },
   {
     id: 'mysore',
@@ -80,7 +86,9 @@ export const destinations: Destination[] = [
     attractions: ['Mysore Palace', 'Brindavan Gardens', 'Chamundeshwari Temple', 'Mysore Zoo', 'Jaganmohan Palace Art Gallery', 'St. Philomena\'s Cathedral'],
     tips: ['Attend the Dasara festival if visiting in autumn.', 'Try the famous Mysore Pak sweet.', 'Explore Devaraja Market for local crafts and silk sarees.'],
     popularFoods: ['Mysore Pak', 'Mysore Masala Dosa', 'Idli & Vada', 'Shavige Bath', 'Chitranna'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62360.40207404979!2d76.59191701049998!3d12.310893904901526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7038112f600f%3A0x425a20399ba9355d!2sMysuru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62360.40207404979!2d76.59191701049998!3d12.310893904901526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7038112f600f%3A0x425a20399ba9355d!2sMysuru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000',
+    entryFee: 'Mysore Palace: INR 100 for adults; Brindavan Gardens: INR 50; Mysore Zoo: INR 100. Chamundi Hill Temple: Free (special darshan may have charges).',
+    timings: 'Mysore Palace: 10:00 AM - 5:30 PM (Illumination on Sundays & holidays 7-8 PM). Brindavan Gardens: 10:00 AM - 8:00 PM (Musical Fountain 7-8 PM). Zoo: 8:30 AM - 5:30 PM (Closed on Tuesdays).',
   },
   {
     id: 'gokarna',
@@ -100,7 +108,9 @@ export const destinations: Destination[] = [
     attractions: ['Om Beach', 'Kudle Beach', 'Half Moon Beach', 'Paradise Beach (Full Moon Beach)', 'Mahabaleshwar Temple', 'Mirjan Fort (nearby)'],
     tips: ['Enjoy beach trekking between the different beaches.', 'Respect local customs, especially near temples.', 'Sunsets are spectacular here. Try yoga retreats if interested.'],
     popularFoods: ['Fresh Seafood (Fish Curry, Prawn Fry)', 'Konkani Vegetarian Thali', 'Sol Kadi', 'Goli Baje', 'Pathrode'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30879.58713782897!2d74.30107537046696!3d14.540288696100547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbe83d654503fb5%3A0x63c7132106c756f7!2sGokarna%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000002'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30879.58713782897!2d74.30107537046696!3d14.540288696100547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbe83d654503fb5%3A0x63c7132106c756f7!2sGokarna%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000002',
+    entryFee: 'Beaches are generally free. Mahabaleshwar Temple: Free entry, special pujas may have charges.',
+    timings: 'Mahabaleshwar Temple: Typically 6:00 AM - 12:30 PM and 5:00 PM - 8:00 PM. Beaches accessible throughout the day.',
   },
   {
     id: 'chikmagalur',
@@ -120,7 +130,9 @@ export const destinations: Destination[] = [
     attractions: ['Mullayanagiri Peak', 'Baba Budangiri', 'Hebbe Falls', 'Kudremukh National Park (partially accessible)', 'Bhadra Wildlife Sanctuary', 'Jhari Waterfalls (Buttermilk Falls)', 'Coffee Museum'],
     tips: ['Explore coffee estates and try local coffee.', 'Ideal for trekking and nature walks.', 'Carry appropriate gear for trekking and rain if visiting during monsoon.', 'Roads can be winding, drive carefully.'],
     popularFoods: ['Akki Roti', 'Malnad style Chicken/Mutton Curry', 'Filter Coffee', 'Neer Dosa', 'Kesuvina Gantu (Colocasia stem curry)'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124497.15033023983!2d75.70330287212638!3d13.331079788392163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbad93c3c083dd3%3A0x271902960307e2ac!2sChikkamagaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000003'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124497.15033023983!2d75.70330287212638!3d13.331079788392163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbad93c3c083dd3%3A0x271902960307e2ac!2sChikkamagaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000003',
+    entryFee: 'Mullayanagiri & Baba Budangiri: Generally free, parking fees may apply. Hebbe Falls/Jhari Falls may have nominal entry or jeep fees. Coffee Museum: ~INR 20.',
+    timings: 'Peaks accessible during daylight. Waterfalls best visited 9:00 AM - 4:00 PM. Coffee Museum: 10:00 AM - 5:30 PM (Closed on weekends/holidays - verify locally).',
   },
   {
     id: 'udupi',
@@ -140,7 +152,9 @@ export const destinations: Destination[] = [
     attractions: ['Sri Krishna Matha (Temple)', 'Malpe Beach & St. Mary\'s Island', 'Kapu Beach (Kaup Beach) & Lighthouse', 'Manipal (University Town, Anatomy Museum)', 'Pajaka Kshetra (Birthplace of Sri Madhvacharya)'],
     tips: ['Savor authentic Udupi cuisine, especially at Mitra Samaj or Diana Restaurant.', 'Visit St. Mary\'s Island for its unique basalt rock formations.', 'Dress modestly when visiting temples.', 'Try local seafood if you are a non-vegetarian.'],
     popularFoods: ['Masala Dosa (Udupi style)', 'Goli Baje (Mangalore Bajji)', 'Neer Dosa', 'Kori Rotti (with chicken curry)', 'Seafood (Fish Fry, Prawn Ghee Roast)'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62048.19999016988!2d74.71508472103538!3d13.340881954646874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb6a542a1397%3A0x8635743563930b75!2sUdupi%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000004'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62048.19999016988!2d74.71508472103538!3d13.340881954646874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb6a542a1397%3A0x8635743563930b75!2sUdupi%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000004',
+    entryFee: 'Sri Krishna Matha: Free. Malpe Beach: Free (boat to St. Mary\'s Island has a fee, ~INR 300). Kapu Lighthouse: Nominal fee (~INR 20).',
+    timings: 'Sri Krishna Matha: 5:00 AM - 9:00 PM (various puja timings). St. Mary\'s Island boats: ~9:00 AM - 5:00 PM. Kapu Lighthouse: ~4:00 PM - 6:00 PM.',
   },
   {
     id: 'badami',
@@ -160,7 +174,9 @@ export const destinations: Destination[] = [
     attractions: ['Badami Cave Temples (1 to 4)', 'Agastya Lake', 'Bhutanatha Group of Temples', 'Badami Fort', 'Archaeological Museum'],
     tips: ['Explore nearby Pattadakal and Aihole for a complete Chalukyan heritage experience.', 'Wear comfortable footwear as there is a bit of climbing involved.', 'Carry water and sun protection, as it can get hot.', 'Engage a local guide to understand the sculptures and history.'],
     popularFoods: ['Jolada Rotti (Sorghum flatbread)', 'Enne Gai (Stuffed Brinjal)', 'Shenga Chutney (Peanut Chutney)', 'North Karnataka style Thali', 'Mirchi Bajji'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30655.911714163336!2d75.6600778210094!3d15.919977896302579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb81f357952e0b9%3A0x4688f766850a206a!2sBadami%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000005'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30655.911714163336!2d75.6600778210094!3d15.919977896302579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb81f357952e0b9%3A0x4688f766850a206a!2sBadami%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1670000000005',
+    entryFee: 'Cave Temples & Museum: INR 30 for Indians, INR 500 for Foreigners. Bhutanatha Temples & Agastya Lake: Free.',
+    timings: 'Cave Temples: 9:00 AM - 5:30 PM. Museum: 10:00 AM - 5:00 PM (Closed on Fridays).',
   },
   {
     id: 'mangalore',
@@ -180,7 +196,9 @@ export const destinations: Destination[] = [
     attractions: ['Panambur Beach', 'Tannirbhavi Beach', 'Kadri Manjunath Temple', 'Kudroli Gokarnath Temple', 'St. Aloysius Chapel', 'Mangaladevi Temple', 'Pilikula Nisargadhama'],
     tips: ['Try the local seafood and Mangalorean cuisine (e.g., Neer Dosa, Kori Rotti).', 'Explore the local markets.', 'Beaches can get crowded on weekends.'],
     popularFoods: ['Mangalorean Fish Curry', 'Neer Dosa', 'Kori Rotti', 'Chicken Ghee Roast', 'Buns (sweet banana poori)', 'Gadbad Ice Cream'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124469.8096951489!2d74.77991894184215!3d12.911027011105165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x82720e91f3f75526!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000006'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124469.8096951489!2d74.77991894184215!3d12.911027011105165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x82720e91f3f75526!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000006',
+    entryFee: 'Beaches: Free. Temples: Generally free, special pujas may have charges. St. Aloysius Chapel: Free. Pilikula Nisargadhama: Varies by attraction within the park.',
+    timings: 'Beaches accessible throughout the day. Temples usually 6:00 AM - 1:00 PM & 4:00 PM - 8:00 PM (varies). Pilikula: ~9:30 AM - 5:30 PM.',
   },
   {
     id: 'shravanabelagola',
@@ -199,7 +217,9 @@ export const destinations: Destination[] = [
     attractions: ['Gomateshwara Statue (Bahubali) on Vindhyagiri Hill', 'Chandragiri Hill (smaller statues and basadis)', 'Numerous Basadis (Jain temples)', 'Bhandar Basadi'],
     tips: ['Be prepared to climb around 600 steps barefoot to reach the main statue on Vindhyagiri.', 'Carry water and wear a hat.', 'Photography is usually allowed but check specific temple rules.', 'The Mahamastakabhisheka is a unique event if your visit coincides.'],
     popularFoods: ['Simple South Indian vegetarian meals', 'Kosambari', 'Happala (Papad)', 'Payasa (Kheer)'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31106.81751547571!2d76.46300797166222!3d12.858630501234786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf41389682970b%3A0x63bf01731c299928!2sShravanabelagola%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000007'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31106.81751547571!2d76.46300797166222!3d12.858630501234786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf41389682970b%3A0x63bf01731c299928!2sShravanabelagola%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000007',
+    entryFee: 'Free to climb the hills and visit temples. Donations accepted.',
+    timings: 'Generally 6:30 AM - 11:30 AM and 3:30 PM - 6:30 PM for darshan at Vindhyagiri. Subject to change during festivals.',
   },
   {
     id: 'belur-halebidu',
@@ -218,7 +238,9 @@ export const destinations: Destination[] = [
     attractions: ['Chennakeshava Temple (Belur)', 'Hoysaleswara Temple (Halebidu)', 'Kedareshwara Temple (Halebidu)', 'Jain Basadis at Halebidu', 'Archaeological Museum at Halebidu'],
     tips: ['Hire a guide to appreciate the intricate details and stories behind the carvings.', 'Allow ample time to explore both sites thoroughly.', 'Photography is permitted in most areas.', 'Wear comfortable shoes as you will be walking a lot.'],
     popularFoods: ['Holige (Obbattu)', 'Akki Roti', 'Ragi Mudde with Soppu Saaru', 'Traditional Kannada Thali'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31088.50227562179!2d75.83531607163169!3d13.16917020091054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5300015216867%3A0x9b935e1c74198c3b!2sBelur%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000008'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31088.50227562179!2d75.83531607163169!3d13.16917020091054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5300015216867%3A0x9b935e1c74198c3b!2sBelur%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000008',
+    entryFee: 'Chennakeshava Temple (Belur): Free. Hoysaleswara Temple (Halebidu): Free. Museum at Halebidu: INR 5.',
+    timings: 'Temples generally open from 7:30 AM - 5:30 PM or 6:30 PM (may close for lunch break). Museum: 10:00 AM - 5:00 PM (Closed on Fridays).',
   },
   {
     id: 'pattadakal',
@@ -237,7 +259,9 @@ export const destinations: Destination[] = [
     attractions: ['Virupaksha Temple', 'Mallikarjuna Temple', 'Sangameshwara Temple', 'Kashi Vishwanatha Temple', 'Galaganatha Temple', 'Jain Narayana Temple', 'Papanatha Temple'],
     tips: ['Often visited along with Aihole and Badami.', 'Hire a guide to understand the significance of different architectural styles.', 'The site is well-maintained and offers a peaceful experience.'],
     popularFoods: ['Jolada Rotti', 'Enne Gai', 'Shenga Holige', 'North Karnataka Meals', 'Girmit'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15390.490711271825!2d75.80526602108866!3d15.948844081662799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb81ccb2e22562b%3A0x492b23fad3677c1a!2sPattadakal%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000009'
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15390.490711271825!2d75.80526602108866!3d15.948844081662799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb81ccb2e22562b%3A0x492b23fad3677c1a!2sPattadakal%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000009',
+    entryFee: 'INR 40 for Indians, INR 600 for Foreigners (composite ticket for the main group of monuments).',
+    timings: 'Sunrise to Sunset (Typically 6:00 AM - 6:00 PM).',
   },
   {
     id: 'murudeshwara',
@@ -257,8 +281,10 @@ export const destinations: Destination[] = [
     attractions: ['Murudeshwara Temple & Raja Gopura', 'World\'s Second Tallest Shiva Statue', 'Murudeshwara Beach', 'Netrani Island (for scuba diving and snorkeling, requires boat trip)', 'Statue Park with various mythological depictions'],
     tips: ['Visit early morning or late afternoon to avoid crowds and heat.', 'Take the elevator in the Raja Gopura for panoramic views.', 'Explore the beach and enjoy water sports if available.', 'Be mindful of local customs and dress modestly when visiting the temple complex.'],
     popularFoods: ['Coastal Karnataka seafood (Fish Thali, Prawns)', 'Neer Dosa', 'Bhatkal Biryani (nearby)', 'Goli Baje', 'Coconut-based curries'],
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30930.785789065895!2d74.4725670212482!3d14.092928893556193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc115237162757%3A0x3c8c6a1223ac9ac!2sMurdeshwar%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000010'
-  }
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30930.785789065895!2d74.4725670212482!3d14.092928893556193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc115237162757%3A0x3c8c6a1223ac9ac!2sMurdeshwar%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000010',
+    entryFee: 'Temple entry: Free. Raja Gopura lift: ~INR 10. Statue Park: Free. Netrani Island trips are separately priced by operators.',
+    timings: 'Temple: 3:00 AM - 1:00 PM, 3:00 PM - 8:00 PM (approx, varies). Beach accessible all day.',
+  },
 ];
 
 
@@ -270,106 +296,13 @@ export const bookingLinks: BookingLink[] = [
     url: 'https://www.makemytrip.com/hotels/',
     provider: 'MakeMyTrip',
     description: 'Wide range of hotels across Karnataka.',
-  },
-  {
-    id: 'agoda-homes-hotels',
-    type: 'accommodation',
-    name: 'Agoda Homes & Hotels',
-    url: 'https://www.agoda.com/',
-    provider: 'Agoda',
-    description: 'Find great deals on homes and hotels in Karnataka.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Agoda_logo.png/600px-Agoda_logo.png',
-    dataAiHint: 'agoda booking travel',
-  },
-  {
-    id: 'booking-com-hotels',
-    type: 'accommodation',
-    name: 'Booking.com Hotels',
-    url: 'https://www.booking.com/',
-    provider: 'Booking.com',
-    description: 'Discover hotels and other accommodations in Karnataka.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'bookingdotcom travel hotels',
-  },
-  {
-    id: 'ksrtc-booking',
-    type: 'transport',
-    name: 'KSRTC Bus Booking',
-    url: 'https://ksrtc.in/oprs-web/',
-    provider: 'KSRTC',
-    description: 'Official Karnataka State Road Transport Corporation bus booking.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'bus travel ksrtc',
-  },
-  {
-    id: 'irctc-train-booking',
-    type: 'transport',
-    name: 'IRCTC Train Booking',
-    url: 'https://www.irctc.co.in/',
-    provider: 'IRCTC',
-    description: 'Official Indian Railways train ticket booking.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'train travel irctc',
-  },
-  {
-    id: 'redbus-booking',
-    type: 'transport',
-    name: 'RedBus Bus Booking',
-    url: 'https://www.redbus.in/',
-    provider: 'RedBus',
-    description: 'Book bus tickets for travel within and to Karnataka.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'bus travel redbus',
-  },
-];
-
-// Sample Itineraries (can be expanded)
-export const sampleItineraries: Itinerary[] = [
-  {
-    id: 'coorg-3d2n',
-    title: '3 Days Rejuvenating Coorg Escape',
-    duration: '3 Days / 2 Nights',
-    interests: ['nature', 'coffee', 'relaxation'],
-    description: 'Experience the misty hills and aromatic coffee plantations of Coorg. This itinerary balances sightseeing with relaxation.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'coorg itinerary travel',
-    dailyPlan: [
-      {
-        day: 1,
-        title: 'Arrival in Madikeri & Local Sightseeing',
-        activities: ['Check into hotel', 'Visit Raja\'s Seat for sunset views', 'Explore Madikeri Fort'],
-      },
-      {
-        day: 2,
-        title: 'Coffee Plantations & Waterfalls',
-        activities: ['Tour a coffee plantation', 'Visit Abbey Falls', 'Explore Dubare Elephant Camp (optional)'],
-      },
-      {
-        day: 3,
-        title: 'Talakaveri & Departure',
-        activities: ['Visit Talakaveri, the origin of River Cauvery', 'Explore Bhagamandala Temple', 'Depart from Coorg'],
-      },
-    ],
-  },
-  {
-    id: 'hampi-2d1n',
-    title: '2 Days Historical Hampi Exploration',
-    duration: '2 Days / 1 Night',
-    interests: ['historical', 'archaeological', 'temples'],
-    description: 'Step back in time and explore the magnificent ruins of the Vijayanagara Empire in Hampi.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    dataAiHint: 'hampi ruins itinerary',
-    dailyPlan: [
-      {
-        day: 1,
-        title: 'Virupaksha Temple & Royal Enclosure',
-        activities: ['Visit Virupaksha Temple', 'Explore Hampi Bazaar', 'Discover the Royal Enclosure (Queen\'s Bath, Lotus Mahal)'],
-      },
-      {
-        day: 2,
-        title: 'Vittala Temple & Riverside Ruins',
-        activities: ['Visit Vittala Temple (Stone Chariot)', 'Explore riverside ruins along Tungabhadra', 'Climb Matanga Hill for panoramic views (optional)'],
-      },
-    ],
-  },
-];
+    // imageUrl: 'data:image/png;base64,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',
+> > 273 | >   108 |     dataAiHint: 'hotel booking travel',
+>       |                         ^
+>   274 | > > 109 |   },
+>   275 | >       |   ^
+>   276 | >   110 |   {
+> 
+> Expected ',', got ':'
+> 
+>
