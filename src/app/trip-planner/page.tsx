@@ -58,15 +58,10 @@ export default function TripPlannerPage() {
     <div 
       className="space-y-8 p-4 rounded-lg"
       style={{
-        backgroundImage: "url('https://boujeelife.in/cdn/shop/files/IMG_1517_1.jpg?v=1697371912&width=1946')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed', // Optional: for a fixed background effect
         minHeight: 'calc(100vh - var(--header-height, 64px) - var(--footer-height, 64px))', // Adjust based on your header/footer height
       }}
     >
-      <Card className="shadow-lg border border-primary/30 bg-card/80 backdrop-blur-sm"> {/* Added transparency and blur to card for better readability */}
+      <Card className="shadow-lg border border-primary/30 bg-card">
         <CardHeader className="text-center">
           <Wand2 className="mx-auto h-12 w-12 text-primary mb-2" />
           <CardTitle className="text-3xl font-bold text-primary">Trip Planner</CardTitle>
@@ -141,20 +136,20 @@ export default function TripPlannerPage() {
       </Card>
 
       {error && (
-        <Alert variant="destructive" className="bg-destructive/80 backdrop-blur-sm text-destructive-foreground">
+        <Alert variant="destructive" className="bg-destructive text-destructive-foreground">
           <AlertTitle>Error</AlertTitle>
           <AlertDescription>{error}</AlertDescription>
         </Alert>
       )}
 
       {itinerary && itinerary.dailyPlans && (
-        <Card className="shadow-lg border border-primary/30 bg-card/80 backdrop-blur-sm">
+        <Card className="shadow-lg border border-primary/30 bg-card">
           <CardHeader>
             <CardTitle className="text-2xl text-primary">{itinerary.overallTitle || "Your Custom Itinerary"}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
             {itinerary.dailyPlans.map((plan, planIndex) => (
-              <Card key={planIndex} className="bg-card/70 p-4 rounded-lg shadow">
+              <Card key={planIndex} className="bg-background/80 p-4 rounded-lg shadow">
                 <CardHeader className="p-2">
                   <CardTitle className="text-xl text-accent flex items-center">
                     <CalendarDays className="mr-2 h-5 w-5" /> Day {plan.day}: {plan.title}
@@ -201,7 +196,7 @@ export default function TripPlannerPage() {
         </Card>
       )}
        {itinerary && !itinerary.dailyPlans && ( 
-        <Card className="shadow-lg border border-primary/30 bg-card/80 backdrop-blur-sm">
+        <Card className="shadow-lg border border-primary/30 bg-card">
           <CardHeader>
             <CardTitle className="text-2xl text-primary">Your Custom Itinerary</CardTitle>
           </CardHeader>
