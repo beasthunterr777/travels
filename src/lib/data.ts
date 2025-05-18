@@ -295,7 +295,7 @@ export const bookingLinks: BookingLink[] = [
     url: 'https://www.agoda.com/',
     provider: 'Agoda',
     description: 'Find deals on hotels, homes, and much more...',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Agoda_logo.png/600px-Agoda_logo.png',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Agoda_logo_2019.svg/330px-Agoda_logo_2019.svg.png',
     dataAiHint: 'hotel booking travel',
   },
   {
