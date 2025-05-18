@@ -107,6 +107,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'is1-ssl.mzstatic.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
