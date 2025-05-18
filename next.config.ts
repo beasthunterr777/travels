@@ -131,6 +131,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 's3.india.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
