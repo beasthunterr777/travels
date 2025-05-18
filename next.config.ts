@@ -1,4 +1,3 @@
-
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
@@ -100,7 +99,13 @@ const nextConfig: NextConfig = {
         hostname: 'boujeelife.in',
         port: '',
         pathname: '/**',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'promos.makemytrip.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
