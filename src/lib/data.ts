@@ -299,6 +299,26 @@ export const bookingLinks: BookingLink[] = [
     dataAiHint: 'hotel booking travel',
   },
   {
+    id: 'goibibo-hotels',
+    type: 'accommodation',
+    name: 'Goibibo Hotels',
+    url: 'https://www.goibibo.com/hotels/',
+    provider: 'Goibibo',
+    description: 'Book hotels and other accommodations.',
+    imageUrl: 'https://jsak.goibibo.com/pwa_v3/pwa_growth/images/og-goibibo.aba291ed.png',
+    dataAiHint: 'goibibo hotel travel',
+  },
+  {
+    id: 'makemytrip-hotels',
+    type: 'accommodation',
+    name: 'MakeMyTrip Hotels',
+    url: 'https://www.makemytrip.com/hotels/',
+    provider: 'MakeMyTrip',
+    description: 'Wide range of hotels across Karnataka.',
+    imageUrl: 'https://placehold.co/400x200.png',
+    dataAiHint: 'makemytrip hotel travel',
+  },
+  {
     id: 'ksrtc-booking',
     type: 'transport',
     name: 'KSRTC Bus Booking',
@@ -317,16 +337,6 @@ export const bookingLinks: BookingLink[] = [
     description: 'Official Indian Railways train ticket booking.',
     imageUrl: 'https://placehold.co/400x200.png',
     dataAiHint: 'train booking india',
-  },
-  {
-    id: 'goibibo-hotels',
-    type: 'accommodation',
-    name: 'Goibibo Hotels',
-    url: 'https://www.goibibo.com/hotels/',
-    provider: 'Goibibo',
-    description: 'Book hotels and other accommodations.',
-    imageUrl: 'https://jsak.goibibo.com/pwa_v3/pwa_growth/images/og-goibibo.aba291ed.png',
-    dataAiHint: 'goibibo hotel travel',
   },
   {
     id: 'redbus-booking',
@@ -385,3 +395,6 @@ export const itineraries: Itinerary[] = [
 
 // Placeholder for AI-generated itineraries - this would be populated dynamically by the AI flow
 export let aiGeneratedItineraries: Itinerary[] = [];
+
+
+    
