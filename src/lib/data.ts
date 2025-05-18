@@ -325,8 +325,8 @@ export const bookingLinks: BookingLink[] = [
     url: 'https://ksrtc.in/oprs-web/',
     provider: 'KSRTC',
     description: 'Official Karnataka State Road Transport Corporation bus booking.',
-    imageUrl: 'https://placehold.co/400x200.png',
-    dataAiHint: 'bus booking karnataka',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/en/f/fc/Karnataka_State_Road_Transportation_Corporation_Logo.png',
+    dataAiHint: 'KSRTC logo bus',
   },
   {
     id: 'irctc-train-booking',
@@ -395,3 +395,5 @@ export const itineraries: Itinerary[] = [
 
 // Placeholder for AI-generated itineraries - this would be populated dynamically by the AI flow
 export let aiGeneratedItineraries: Itinerary[] = [];
+
+    
