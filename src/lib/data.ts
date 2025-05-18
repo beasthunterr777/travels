@@ -19,8 +19,8 @@ export const destinations: Destination[] = [
     },
     attractions: ['Bangalore Palace', 'Lal Bagh Botanical Garden', 'Cubbon Park', 'Vidhana Soudha', 'ISKCON Temple Bangalore', 'National Gallery of Modern Art', 'Visvesvaraya Industrial & Technological Museum', 'Bannerghatta National Park (Safari & Zoo)'],
     tips: ['Utilize ride-hailing apps or metro for easy commute.', 'Explore diverse culinary scenes from street food to fine dining.', 'Traffic can be heavy, plan your travel accordingly.', 'Many tech parks and startups to see if interested in the modern aspect.'],
-    popularFoods: ['Bisi Bele Bath', 'Rava Idli', 'Masala Dosa', 'Filter Coffee', 'Chow Chow Bath', 'Mangalore Buns (available in many bakeries)'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.95993135967!2d77.4661254209386!3d12.95394562249558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1710000000000',
+    popularFoods: ['Bisi Bele Bath', 'Rava Idli', 'Masala Dosa', 'Filter Coffee', 'Chow Chow Bath', 'Mangalore Buns (available in many bakeries)'],
     entryFee: 'Varies by attraction (e.g., Bangalore Palace: INR 230 for Indians, INR 460 for Foreigners; Lal Bagh: INR 25). Many parks free.',
     timings: 'Most attractions open 10:00 AM - 5:30 PM. Parks may have longer hours. Check specific locations.',
   },
@@ -85,8 +85,8 @@ export const destinations: Destination[] = [
     },
     attractions: ['Mysore Palace', 'Brindavan Gardens', 'Chamundeshwari Temple', 'Mysore Zoo', 'Jaganmohan Palace Art Gallery', 'St. Philomena\'s Cathedral'],
     tips: ['Attend the Dasara festival if visiting in autumn.', 'Try the famous Mysore Pak sweet.', 'Explore Devaraja Market for local crafts and silk sarees.'],
-    popularFoods: ['Mysore Pak', 'Mysore Masala Dosa', 'Idli & Vada', 'Shavige Bath', 'Chitranna'],
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62360.40207404979!2d76.59191701049998!3d12.310893904901526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7038112f600f%3A0x425a20399ba9355d!2sMysuru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000',
+    popularFoods: ['Mysore Pak', 'Mysore Masala Dosa', 'Idli & Vada', 'Shavige Bath', 'Chitranna'],
     entryFee: 'Mysore Palace: INR 100 for adults; Brindavan Gardens: INR 50; Mysore Zoo: INR 100. Chamundi Hill Temple: Free (special darshan may have charges).',
     timings: 'Mysore Palace: 10:00 AM - 5:30 PM (Illumination on Sundays & holidays 7-8 PM). Brindavan Gardens: 10:00 AM - 8:00 PM (Musical Fountain 7-8 PM). Zoo: 8:30 AM - 5:30 PM (Closed on Tuesdays).',
   },
@@ -345,8 +345,8 @@ export const bookingLinks: BookingLink[] = [
     url: 'https://www.redbus.in/',
     provider: 'RedBus',
     description: 'Online bus ticket booking across India.',
-    imageUrl: 'https://placehold.co/400x200.png',
-    dataAiHint: 'redbus bus tickets',
+    imageUrl: 'https://photos.prnewswire.com/prnfull/20130503/613054',
+    dataAiHint: 'redbus logo',
   }
 ];
 
