@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'KARNATAKA TOURIST RECOMMENDER - Your AI Guide to Karnataka',
+  title: 'KARNATAKA TRAVEL RECOMMENDER - Your AI Guide to Karnataka',
   description: 'Get personalized tourist recommendations, plan itineraries, and discover the rich culture of Karnataka with an AI assistant.',
 };
 
